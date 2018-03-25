@@ -1,0 +1,2202 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>备份、未链接文件测试 (OTG-CONFIG-004) | 说明</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.4">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../web_application_security_testing/enumerate_infrastructure_and_application_admin_interfaces_otg-config-005.html" />
+    
+    
+    <link rel="prev" href="../web_application_security_testing/test_file_extensions_handling_for_sensitive_information_otg-config-003.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.3.4"
+        data-chapter-title="备份、未链接文件测试 (OTG-CONFIG-004)"
+        data-filepath="web_application_security_testing/review_old,_backup_and_unreferenced_files_for_sensitive_information_otg-config-004.md"
+        data-basepath=".."
+        data-revision="Tue Dec 08 2015 17:24:13 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="frontispiece/index.html">
+            
+                
+                    <a href="../frontispiece/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="introduction/index.html">
+            
+                
+                    <a href="../introduction/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="the_owasp_testing_framework/index.html">
+            
+                
+                    <a href="../the_owasp_testing_framework/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        OWASP测试框架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="web_application_security_testing/index.html">
+            
+                
+                    <a href="../web_application_security_testing/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Web应用安全测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="web_application_security_testing/introduction_and_objectives.html">
+            
+                
+                    <a href="../web_application_security_testing/introduction_and_objectives.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        简介与目标
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="web_application_security_testing/testing_checklist.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_checklist.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        测试清单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="web_application_security_testing/information_gathering.html">
+            
+                
+                    <a href="../web_application_security_testing/information_gathering.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        信息收集
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="web_application_security_testing/conduct_search_engine_discovery_and_reconnaissance_for_information_leakage_otg-info-001.html">
+            
+                
+                    <a href="../web_application_security_testing/conduct_search_engine_discovery_and_reconnaissance_for_information_leakage_otg-info-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        搜索引擎信息发现和侦察 (OTG-INFO-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="web_application_security_testing/fingerprint_web_server_otg-info-002.html">
+            
+                
+                    <a href="../web_application_security_testing/fingerprint_web_server_otg-info-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                        识别web服务器 (OTG-INFO-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="web_application_security_testing/review_webserver_metafiles_for_information_leakage_otg-info-003.html">
+            
+                
+                    <a href="../web_application_security_testing/review_webserver_metafiles_for_information_leakage_otg-info-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                        web服务器元文件信息发现 (OTG-INFO-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="web_application_security_testing/enumerate_applications_on_webserver_otg-info-004.html">
+            
+                
+                    <a href="../web_application_security_testing/enumerate_applications_on_webserver_otg-info-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.4.</b>
+                        
+                        服务器应用应用枚举 (OTG-INFO-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="web_application_security_testing/review_webpage_comments_and_metadata_for_information_leakage_otg-info-005.html">
+            
+                
+                    <a href="../web_application_security_testing/review_webpage_comments_and_metadata_for_information_leakage_otg-info-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.5.</b>
+                        
+                        评论信息发现 (OTG-INFO-005)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.6" data-path="web_application_security_testing/identify_application_entry_points_otg-info-006.html">
+            
+                
+                    <a href="../web_application_security_testing/identify_application_entry_points_otg-info-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.6.</b>
+                        
+                        应用入口识别 (OTG-INFO-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.7" data-path="web_application_security_testing/map_execution_paths_through_application_otg-info-007.html">
+            
+                
+                    <a href="../web_application_security_testing/map_execution_paths_through_application_otg-info-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.7.</b>
+                        
+                        识别应用工作流程 (OTG-INFO-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.8" data-path="web_application_security_testing/fingerprint_web_application_framework_otg-info-008.html">
+            
+                
+                    <a href="../web_application_security_testing/fingerprint_web_application_framework_otg-info-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.8.</b>
+                        
+                        识别web应用框架 (OTG-INFO-008)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.9" data-path="web_application_security_testing/fingerprint_web_application_otg-info-009.html">
+            
+                
+                    <a href="../web_application_security_testing/fingerprint_web_application_otg-info-009.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.9.</b>
+                        
+                        识别web应用程序 (OTG-INFO-009)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.10" data-path="web_application_security_testing/map_application_architecture_otg-info-010.html">
+            
+                
+                    <a href="../web_application_security_testing/map_application_architecture_otg-info-010.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.10.</b>
+                        
+                        绘制应用架构图 (OTG-INFO-010)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="web_application_security_testing/configuration_and_deployment_management_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/configuration_and_deployment_management_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        配置以及部署管理测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="web_application_security_testing/test_networkinfrastructure_configuration_otg-config-001.html">
+            
+                
+                    <a href="../web_application_security_testing/test_networkinfrastructure_configuration_otg-config-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.1.</b>
+                        
+                        网络基础设施配置测试 (OTG-CONFIG-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="web_application_security_testing/test_application_platform_configuration_otg-config-002.html">
+            
+                
+                    <a href="../web_application_security_testing/test_application_platform_configuration_otg-config-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.2.</b>
+                        
+                        应用平台配置管理测试 (OTG-CONFIG-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="web_application_security_testing/test_file_extensions_handling_for_sensitive_information_otg-config-003.html">
+            
+                
+                    <a href="../web_application_security_testing/test_file_extensions_handling_for_sensitive_information_otg-config-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.3.</b>
+                        
+                        文件扩展名处理测试 (OTG-CONFIG-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3.4" data-path="web_application_security_testing/review_old,_backup_and_unreferenced_files_for_sensitive_information_otg-config-004.html">
+            
+                
+                    <a href="../web_application_security_testing/review_old,_backup_and_unreferenced_files_for_sensitive_information_otg-config-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.4.</b>
+                        
+                        备份、未链接文件测试 (OTG-CONFIG-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="web_application_security_testing/enumerate_infrastructure_and_application_admin_interfaces_otg-config-005.html">
+            
+                
+                    <a href="../web_application_security_testing/enumerate_infrastructure_and_application_admin_interfaces_otg-config-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.5.</b>
+                        
+                        枚举管理接口测试 (OTG-CONFIG-005)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.6" data-path="web_application_security_testing/test_http_methods_otg-config-006.html">
+            
+                
+                    <a href="../web_application_security_testing/test_http_methods_otg-config-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.6.</b>
+                        
+                        HTTP方法测试 (OTG-CONFIG-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.7" data-path="web_application_security_testing/test_http_strict_transport_security_otg-config-007.html">
+            
+                
+                    <a href="../web_application_security_testing/test_http_strict_transport_security_otg-config-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.7.</b>
+                        
+                        HTTP严格传输安全测试 (OTG-CONFIG-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.8" data-path="web_application_security_testing/test_ria_cross_domain_policy_otg-config-008.html">
+            
+                
+                    <a href="../web_application_security_testing/test_ria_cross_domain_policy_otg-config-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.8.</b>
+                        
+                        应用跨域策略测试 (OTG-CONFIG-008)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="web_application_security_testing/identity_management_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/identity_management_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        身份鉴别管理测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="web_application_security_testing/test_role_definitions_otg-ident-001.html">
+            
+                
+                    <a href="../web_application_security_testing/test_role_definitions_otg-ident-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.1.</b>
+                        
+                        角色定义测试 (OTG-IDENT-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="web_application_security_testing/test_user_registration_process_otg-ident-002.html">
+            
+                
+                    <a href="../web_application_security_testing/test_user_registration_process_otg-ident-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.2.</b>
+                        
+                        用户注册过程测试 (OTG-IDENT-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="web_application_security_testing/test_account_provisioning_process_otg-ident-003.html">
+            
+                
+                    <a href="../web_application_security_testing/test_account_provisioning_process_otg-ident-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.3.</b>
+                        
+                        帐户权限变化测试 (OTG-IDENT-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.4" data-path="web_application_security_testing/testing_for_account_enumeration_and_guessable_user_account_otg-ident-004.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_account_enumeration_and_guessable_user_account_otg-ident-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.4.</b>
+                        
+                        帐户枚举测试 (OTG-IDENT-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.5" data-path="web_application_security_testing/testing_for_weak_or_unenforced_username_policy_otg-ident-005.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_or_unenforced_username_policy_otg-ident-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.5.</b>
+                        
+                        弱用户名策略测试 (OTG-IDENT-005)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="web_application_security_testing/authentication_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/authentication_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        认证测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="web_application_security_testing/testing_for_credentials_transported_over_an_encrypted_channel_otg-authn-001.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_credentials_transported_over_an_encrypted_channel_otg-authn-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.1.</b>
+                        
+                        口令信息加密传输测试 (OTG-AUTHN-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="web_application_security_testing/testing_for_default_credentials_otg-authn-002.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_default_credentials_otg-authn-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.2.</b>
+                        
+                        默认口令测试 (OTG-AUTHN-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="web_application_security_testing/testing_for_weak_lock_out_mechanism_otg-authn-003.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_lock_out_mechanism_otg-authn-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.3.</b>
+                        
+                        帐户锁定机制测试 (OTG-AUTHN-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.4" data-path="web_application_security_testing/testing_for_bypassing_authentication_schema_otg-authn-004.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_bypassing_authentication_schema_otg-authn-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.4.</b>
+                        
+                        认证绕过测试 (OTG-AUTHN-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.5" data-path="web_application_security_testing/test_remember_password_functionality_otg-authn-005.html">
+            
+                
+                    <a href="../web_application_security_testing/test_remember_password_functionality_otg-authn-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.5.</b>
+                        
+                        记住密码功能测试 functionality (OTG-AUTHN-005)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.6" data-path="web_application_security_testing/testing_for_browser_cache_weakness_otg-authn-006.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_browser_cache_weakness_otg-authn-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.6.</b>
+                        
+                        浏览器缓存弱点测试 (OTG-AUTHN-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.7" data-path="web_application_security_testing/testing_for_weak_password_policy_otg-authn-007.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_password_policy_otg-authn-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.7.</b>
+                        
+                        密码策略测试 (OTG-AUTHN-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.8" data-path="web_application_security_testing/testing_for_weak_security_questionanswer_otg-authn-008.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_security_questionanswer_otg-authn-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.8.</b>
+                        
+                        安全问答测试 (OTG-AUTHN-008)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.9" data-path="web_application_security_testing/testing_for_weak_password_change_or_reset_functionalities_otg-authn-009.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_password_change_or_reset_functionalities_otg-authn-009.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.9.</b>
+                        
+                        密码重置测试 (OTG-AUTHN-009)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.10" data-path="web_application_security_testing/testing_for_weaker_authentication_in_alternative_channel_otg-authn-010.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weaker_authentication_in_alternative_channel_otg-authn-010.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.10.</b>
+                        
+                        其他相关认证渠道测试 (OTG-AUTHN-010)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="web_application_security_testing/authorization_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/authorization_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        授权测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="web_application_security_testing/testing_directory_traversalfile_include_otg-authz-001.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_directory_traversalfile_include_otg-authz-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.1.</b>
+                        
+                        目录遍历/文件包含测试 (OTG-AUTHZ-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="web_application_security_testing/testing_for_bypassing_authorization_schema_otg-authz-002.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_bypassing_authorization_schema_otg-authz-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.2.</b>
+                        
+                        授权绕过测试 (OTG-AUTHZ-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="web_application_security_testing/testing_for_privilege_escalation_otg-authz-003.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_privilege_escalation_otg-authz-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.3.</b>
+                        
+                        权限提升测试 (OTG-AUTHZ-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="web_application_security_testing/testing_for_insecure_direct_object_references_otg-authz-004.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_insecure_direct_object_references_otg-authz-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.4.</b>
+                        
+                        不安全对象直接引用测试 (OTG-AUTHZ-004)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="web_application_security_testing/session_management_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/session_management_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        会话管理测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="web_application_security_testing/testing_for_bypassing_session_management_schema_otg-sess-001.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_bypassing_session_management_schema_otg-sess-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.1.</b>
+                        
+                        会话管理绕过测试 (OTG-SESS-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="web_application_security_testing/testing_for_cookies_attributes_otg-sess-002.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_cookies_attributes_otg-sess-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.2.</b>
+                        
+                        Cookies属性测试 (OTG-SESS-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="web_application_security_testing/testing_for_session_fixation_otg-sess-003.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_session_fixation_otg-sess-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.3.</b>
+                        
+                        会话固定测试 (OTG-SESS-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.4" data-path="web_application_security_testing/testing_for_exposed_session_variables_otg-sess-004.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_exposed_session_variables_otg-sess-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.4.</b>
+                        
+                        会话令牌泄露测试 (OTG-SESS-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.5" data-path="web_application_security_testing/testing_for_cross_site_request_forgery_csrf_otg-sess-005.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_cross_site_request_forgery_csrf_otg-sess-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.5.</b>
+                        
+                        跨站点请求伪造（CSRF）测试 (OTG-SESS-005)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.6" data-path="web_application_security_testing/testing_for_logout_functionality_otg-sess-006.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_logout_functionality_otg-sess-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.6.</b>
+                        
+                        登出功能测试 (OTG-SESS-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.7" data-path="web_application_security_testing/test_session_timeout_otg-sess-007.html">
+            
+                
+                    <a href="../web_application_security_testing/test_session_timeout_otg-sess-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.7.</b>
+                        
+                        会话超时测试 (OTG-SESS-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.8" data-path="web_application_security_testing/testing_for_session_puzzling_otg-sess-008.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_session_puzzling_otg-sess-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.8.</b>
+                        
+                        会话令牌重载测试 (OTG-SESS-008)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="web_application_security_testing/input_validation_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/input_validation_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        输入验证测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.1" data-path="web_application_security_testing/testing_for_reflected_cross_site_scripting_otg-inpval-001.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_reflected_cross_site_scripting_otg-inpval-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.1.</b>
+                        
+                        反射型跨站脚本测试 (OTG-INPVAL-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.2" data-path="web_application_security_testing/testing_for_stored_cross_site_scripting_otg-inpval-002.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_stored_cross_site_scripting_otg-inpval-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.2.</b>
+                        
+                        存储型跨站脚本测试 (OTG-INPVAL-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.3" data-path="web_application_security_testing/testing_for_http_verb_tampering_otg-inpval-003.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_http_verb_tampering_otg-inpval-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.3.</b>
+                        
+                        HTTP谓词伪造测试 (OTG-INPVAL-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.4" data-path="web_application_security_testing/testing_for_http_parameter_pollution_otg-inpval-004.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_http_parameter_pollution_otg-inpval-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.4.</b>
+                        
+                        HTTP参数污染测试 (OTG-INPVAL-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5" data-path="web_application_security_testing/testing_for_sql_injection_otg-inpval-005.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_sql_injection_otg-inpval-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.</b>
+                        
+                        SQL注入测试 (OTG-INPVAL-005)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.5.1" data-path="web_application_security_testing/oracle_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/oracle_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.1.</b>
+                        
+                        Oracle注入测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5.2" data-path="web_application_security_testing/mysql_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/mysql_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.2.</b>
+                        
+                        MySQL注入测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5.3" data-path="web_application_security_testing/sql_server_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/sql_server_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.3.</b>
+                        
+                        SQL Server注入测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5.4" data-path="web_application_security_testing/testing_postgresql_from_owasp_bsp.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_postgresql_from_owasp_bsp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.4.</b>
+                        
+                        PostgreSQL注入测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5.5" data-path="web_application_security_testing/ms_access_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/ms_access_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.5.</b>
+                        
+                        MS Access注入测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5.6" data-path="web_application_security_testing/testing_for_nosql_injection.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_nosql_injection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.5.6.</b>
+                        
+                        NoSQL注入测试
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.6" data-path="web_application_security_testing/testing_for_ldap_injection_otg-inpval-006.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_ldap_injection_otg-inpval-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.6.</b>
+                        
+                        LDAP注入测试 (OTG-INPVAL-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.7" data-path="web_application_security_testing/testing_for_orm_injection_otg-inpval-007.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_orm_injection_otg-inpval-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.7.</b>
+                        
+                        ORM注入测试 (OTG-INPVAL-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.8" data-path="web_application_security_testing/testing_for_xml_injection_otg-inpval-008.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_xml_injection_otg-inpval-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.8.</b>
+                        
+                        XML注入测试 (OTG-INPVAL-008)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.9" data-path="web_application_security_testing/testing_for_ssi_injection_otg-inpval-009.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_ssi_injection_otg-inpval-009.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.9.</b>
+                        
+                        SSI注入测试 (OTG-INPVAL-009)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.10" data-path="web_application_security_testing/testing_for_xpath_injection_otg-inpval-010.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_xpath_injection_otg-inpval-010.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.10.</b>
+                        
+                        XPath注入测试 (OTG-INPVAL-010)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.11" data-path="web_application_security_testing/imapsmtp_injection_otg-inpval-011.html">
+            
+                
+                    <a href="../web_application_security_testing/imapsmtp_injection_otg-inpval-011.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.11.</b>
+                        
+                        IMAP/SMTP注入测试 (OTG-INPVAL-011)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.12" data-path="web_application_security_testing/testing_for_code_injection_otg-inpval-012.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_code_injection_otg-inpval-012.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.12.</b>
+                        
+                        代码注入测试 (OTG-INPVAL-012)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.12.1" data-path="web_application_security_testing/testing_for_local_file_inclusion.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_local_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.12.1.</b>
+                        
+                        本地文件包含测试(LFI)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.12.2" data-path="web_application_security_testing/testing_for_remote_file_inclusion.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_remote_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.12.2.</b>
+                        
+                        远程文件包含测试(RFI)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.13" data-path="web_application_security_testing/testing_for_command_injection_otg-inpval-013.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_command_injection_otg-inpval-013.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.13.</b>
+                        
+                        命令执行注入测试 (OTG-INPVAL-013)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.14" data-path="web_application_security_testing/testing_for_buffer_overflow_otg-inpval-014.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_buffer_overflow_otg-inpval-014.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.14.</b>
+                        
+                        缓冲区溢出测试 (OTG-INPVAL-014)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.14.1" data-path="web_application_security_testing/testing_for_heap_overflow.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_heap_overflow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.14.1.</b>
+                        
+                        堆溢出测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.14.2" data-path="web_application_security_testing/testing_for_stack_overflow.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_stack_overflow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.14.2.</b>
+                        
+                        栈溢出测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.14.3" data-path="web_application_security_testing/testing_for_format_string.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_format_string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.14.3.</b>
+                        
+                        格式化字符串测试
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.15" data-path="web_application_security_testing/testing_for_incubated_vulnerabilities_otg-inpval-015.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_incubated_vulnerabilities_otg-inpval-015.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.15.</b>
+                        
+                        潜伏式漏洞测试 (OTG-INPVAL-015)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.16" data-path="web_application_security_testing/testing_for_http_splittingsmuggling_otg-inpval-016.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_http_splittingsmuggling_otg-inpval-016.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.16.</b>
+                        
+                        HTTP分割/伪造测试 (OTG-INPVAL-016)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="web_application_security_testing/testing_for_error_handling.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_error_handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        错误处理测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.9.1" data-path="web_application_security_testing/analysis_of_error_codes_otg-err-001.html">
+            
+                
+                    <a href="../web_application_security_testing/analysis_of_error_codes_otg-err-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.1.</b>
+                        
+                        错误码分析 (OTG-ERR-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9.2" data-path="web_application_security_testing/analysis_of_stack_traces_otg-err-002.html">
+            
+                
+                    <a href="../web_application_security_testing/analysis_of_stack_traces_otg-err-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.2.</b>
+                        
+                        栈追踪分析 (OTG-ERR-002)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="web_application_security_testing/testing_for_weak_cryptography.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_cryptography.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        密码学测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.10.1" data-path="web_application_security_testing/testing_for_weak_ssltls_ciphers,_insufficient_transport_layer_protection_otg-crypst-001.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_weak_ssltls_ciphers,_insufficient_transport_layer_protection_otg-crypst-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.1.</b>
+                        
+                        弱SSL/TLS加密，不安全的传输层防护测试 (OTG-CRYPST-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10.2" data-path="web_application_security_testing/testing_for_padding_oracle_otg-crypst-002.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_padding_oracle_otg-crypst-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.2.</b>
+                        
+                        Padding Oracle测试 (OTG-CRYPST-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10.3" data-path="web_application_security_testing/testing_for_sensitive_information_sent_via_unencrypted_channels_otg-crypst-003.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_sensitive_information_sent_via_unencrypted_channels_otg-crypst-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.3.</b>
+                        
+                        非加密信道传输敏感数据测试 (OTG-CRYPST-003)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="web_application_security_testing/business_logic_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/business_logic_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.</b>
+                        
+                        业务逻辑测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.11.1" data-path="web_application_security_testing/test_business_logic_data_validation_otg-buslogic-001.html">
+            
+                
+                    <a href="../web_application_security_testing/test_business_logic_data_validation_otg-buslogic-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.1.</b>
+                        
+                        业务逻辑数据验证测试 (OTG-BUSLOGIC-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.2" data-path="web_application_security_testing/test_ability_to_forge_requests_otg-buslogic-002.html">
+            
+                
+                    <a href="../web_application_security_testing/test_ability_to_forge_requests_otg-buslogic-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.2.</b>
+                        
+                        请求伪造能力测试 (OTG-BUSLOGIC-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.3" data-path="web_application_security_testing/test_integrity_checks_otg-buslogic-003.html">
+            
+                
+                    <a href="../web_application_security_testing/test_integrity_checks_otg-buslogic-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.3.</b>
+                        
+                        完整性测试 (OTG-BUSLOGIC-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.4" data-path="web_application_security_testing/test_for_process_timing_otg-buslogic-004.html">
+            
+                
+                    <a href="../web_application_security_testing/test_for_process_timing_otg-buslogic-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.4.</b>
+                        
+                        过程时长测试 (OTG-BUSLOGIC-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.5" data-path="web_application_security_testing/test_number_of_times_a_function_can_be_used_limits_otg-buslogic-005.html">
+            
+                
+                    <a href="../web_application_security_testing/test_number_of_times_a_function_can_be_used_limits_otg-buslogic-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.5.</b>
+                        
+                        功能使用次数限制测试 (OTG-BUSLOGIC-005)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.6" data-path="web_application_security_testing/testing_for_the_circumvention_of_work_flows_otg-buslogic-006.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_the_circumvention_of_work_flows_otg-buslogic-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.6.</b>
+                        
+                        工作流程绕过测试 (OTG-BUSLOGIC-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.7" data-path="web_application_security_testing/test_defenses_against_application_mis-use_otg-buslogic-007.html">
+            
+                
+                    <a href="../web_application_security_testing/test_defenses_against_application_mis-use_otg-buslogic-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.7.</b>
+                        
+                        应用误用防护测试 (OTG-BUSLOGIC-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.8" data-path="web_application_security_testing/test_upload_of_unexpected_file_types_otg-buslogic-008.html">
+            
+                
+                    <a href="../web_application_security_testing/test_upload_of_unexpected_file_types_otg-buslogic-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.8.</b>
+                        
+                        非预期文件类型上传测试 (OTG-BUSLOGIC-008)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.9" data-path="web_application_security_testing/test_upload_of_malicious_files_otg-buslogic-009.html">
+            
+                
+                    <a href="../web_application_security_testing/test_upload_of_malicious_files_otg-buslogic-009.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.9.</b>
+                        
+                        恶意文件上传测试 (OTG-BUSLOGIC-009)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="web_application_security_testing/client_side_testing.html">
+            
+                
+                    <a href="../web_application_security_testing/client_side_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.</b>
+                        
+                        客户端测试
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.12.1" data-path="web_application_security_testing/testing_for_dom_based_cross_site_scripting_otg-client-001.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_dom_based_cross_site_scripting_otg-client-001.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.1.</b>
+                        
+                        基于DOM跨站脚本测试 (OTG-CLIENT-001)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.2" data-path="web_application_security_testing/testing_for_javascript_execution_otg-client-002.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_javascript_execution_otg-client-002.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.2.</b>
+                        
+                        JavaScript脚本执行测试 (OTG-CLIENT-002)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.3" data-path="web_application_security_testing/testing_for_html_injection_otg-client-003.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_html_injection_otg-client-003.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.3.</b>
+                        
+                        HTML注入测试 (OTG-CLIENT-003)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.4" data-path="web_application_security_testing/testing_for_client_side_url_redirect_otg-client-004.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_client_side_url_redirect_otg-client-004.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.4.</b>
+                        
+                        客户端URL重定向测试 (OTG-CLIENT-004)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.5" data-path="web_application_security_testing/testing_for_css_injection_otg-client-005.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_css_injection_otg-client-005.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.5.</b>
+                        
+                        CSS注入测试 (OTG-CLIENT-005)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.6" data-path="web_application_security_testing/testing_for_client_side_resource_manipulation_otg-client-006.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_client_side_resource_manipulation_otg-client-006.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.6.</b>
+                        
+                        客户端资源操纵测试 (OTG-CLIENT-006)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.7" data-path="web_application_security_testing/test_cross_origin_resource_sharing_otg-client-007.html">
+            
+                
+                    <a href="../web_application_security_testing/test_cross_origin_resource_sharing_otg-client-007.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.7.</b>
+                        
+                        跨源资源分享测试 (OTG-CLIENT-007)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.8" data-path="web_application_security_testing/testing_for_cross_site_flashing_otg-client-008.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_cross_site_flashing_otg-client-008.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.8.</b>
+                        
+                        Flash跨站测试 (OTG-CLIENT-008)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.9" data-path="web_application_security_testing/testing_for_clickjacking_otg-client-009.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_for_clickjacking_otg-client-009.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.9.</b>
+                        
+                        点击劫持测试 (OTG-CLIENT-009)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.10" data-path="web_application_security_testing/testing_websockets_otg-client-010.html">
+            
+                
+                    <a href="../web_application_security_testing/testing_websockets_otg-client-010.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.10.</b>
+                        
+                        WebSockets测试 (OTG-CLIENT-010)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.11" data-path="web_application_security_testing/test_web_messaging_otg-client-011.html">
+            
+                
+                    <a href="../web_application_security_testing/test_web_messaging_otg-client-011.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.11.</b>
+                        
+                        Web消息测试 (OTG-CLIENT-011)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.12" data-path="web_application_security_testing/test_local_storage_otg-client-012.html">
+            
+                
+                    <a href="../web_application_security_testing/test_local_storage_otg-client-012.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.12.</b>
+                        
+                        本地存储测试 (Local Storage) (OTG-CLIENT-012)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="reporting/index.html">
+            
+                
+                    <a href="../reporting/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        报告编写
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="appendix/index.html">
+            
+                
+                    <a href="../appendix/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        附录
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="appendix/appendix_a_testing_tools.html">
+            
+                
+                    <a href="../appendix/appendix_a_testing_tools.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        附录 A: 测试工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="appendix/appendix_b_suggested_reading.html">
+            
+                
+                    <a href="../appendix/appendix_b_suggested_reading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        附录 B: 推荐读物
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="appendix/appendix_c_fuzz_vectors.html">
+            
+                
+                    <a href="../appendix/appendix_c_fuzz_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        附录 C: 测试向量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="appendix/appendix_d_encoded_injection.html">
+            
+                
+                    <a href="../appendix/appendix_d_encoded_injection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        附录 D: 编码注入
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >说明</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5BA1;&#x67E5;&#x65E7;&#x6587;&#x4EF6;&#x3001;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x548C;&#x672A;&#x5F15;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;-otgconfig004">&#x5BA1;&#x67E5;&#x65E7;&#x6587;&#x4EF6;&#x3001;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x548C;&#x672A;&#x5F15;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F; (OTG-CONFIG-004)</h1>
+<h3 id="&#x7EFC;&#x8FF0;">&#x7EFC;&#x8FF0;</h3>
+<p>&#x867D;&#x7136;&#x5927;&#x591A;&#x6570;web&#x670D;&#x52A1;&#x5668;&#x7684;&#x6587;&#x4EF6;&#x88AB;&#x670D;&#x52A1;&#x5668;&#x81EA;&#x5DF1;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x80FD;&#x627E;&#x5230;&#x672A;&#x5F15;&#x7528;&#x7684;&#x6216;&#x8FD9;&#x9057;&#x5FD8;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x52A9;&#x4E8E;&#x83B7;&#x5F97;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x7684;&#x91CD;&#x8981;&#x4FE1;&#x606F;&#x6216;&#x6709;&#x6548;&#x767B;&#x9646;&#x51ED;&#x8BC1;&#x3002;</p>
+<p>&#x5927;&#x591A;&#x6570;&#x573A;&#x666F;&#x5305;&#x62EC;&#x91CD;&#x547D;&#x540D;&#x540E;&#x7684;&#x5C31;&#x7248;&#x672C;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x540C;&#x8BED;&#x8A00;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x88AB;&#x5F53;&#x4F5C;&#x6E90;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#xFF0C;&#x6216;&#x8005;&#x81EA;&#x52A8;&#x6216;&#x624B;&#x52A8;&#x5907;&#x4EFD;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x3002;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x4E5F;&#x53EF;&#x80FD;&#x7531;&#x4E8E;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x7279;&#x6027;&#x88AB;&#x81EA;&#x52A8;&#x751F;&#x6210;&#xFF0C;&#x6BD4;&#x5982;&#x201C;&#x6587;&#x4EF6;&#x5FEB;&#x7167;&#x201D;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x7ED9;&#x4E88;&#x4E86;&#x6D4B;&#x8BD5;&#x8005;&#x8BBF;&#x95EE;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x3001;&#x540E;&#x95E8;&#x3001;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x751A;&#x81F3;&#x767B;&#x9646;&#x51ED;&#x8BC1;&#x6765;&#x8FDE;&#x63A5;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x6216;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x6F0F;&#x6D1E;&#x7684;&#x91CD;&#x8981;&#x6765;&#x6E90;&#x5728;&#x4E8E;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x80FD;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x672C;&#x8EAB;&#x65E0;&#x5173;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x7F16;&#x8F91;&#x5E94;&#x7528;&#x6587;&#x4EF6;&#x8FC7;&#x7A0B;&#x4E2D;&#x4EA7;&#x751F;&#x6216;&#x4E34;&#x65F6;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x4E2D;&#x4EA7;&#x751F;&#xFF0C;&#x53C8;&#x6216;&#x662F;&#x9057;&#x7559;&#x7684;&#x65E7;&#x6587;&#x4EF6;&#x6216;&#x672A;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x3002;&#x5728;&#x751F;&#x4EA7;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5B9E;&#x65BD;&#x5728;&#x7EBF;&#x4FEE;&#x6539;&#x6216;&#x5176;&#x4ED6;&#x7BA1;&#x7406;&#x884C;&#x4E3A;&#x53EF;&#x80FD;&#x65E0;&#x610F;&#x4E2D;&#x7559;&#x4E0B;&#x5907;&#x4EFD;&#x7684;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#xFF0C;&#x6216;&#x662F;&#x81EA;&#x52A8;&#x88AB;&#x7F16;&#x8F91;&#x5668;&#x5728;&#x7F16;&#x8F91;&#x7684;&#x8FC7;&#x7A0B;&#x4EA7;&#x751F;&#xFF0C;&#x6216;&#x88AB;&#x7BA1;&#x7406;&#x5458;&#x5B58;&#x653E;&#x5728;&#x538B;&#x7F29;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x5F88;&#x5BB9;&#x6613;&#x88AB;&#x9057;&#x5FD8;&#xFF0C;&#x5E76;&#x5BFC;&#x81F4;&#x4E25;&#x91CD;&#x7684;&#x5B89;&#x5168;&#x5A01;&#x80C1;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x53EF;&#x80FD;&#x533A;&#x522B;&#x4E8E;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x751F;&#x6210;&#x4E86; <em>.tar&#xFF0C;.zip &#x6216;.gz</em> &#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF08;&#x88AB;&#x9057;&#x5FD8;&#xFF09;&#xFF0C;&#x663E;&#x7136;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x7F16;&#x8F91;&#x5668;&#x81EA;&#x52A8;&#x5907;&#x4EFD;&#x7684;&#x4E5F;&#x4E00;&#x6837;&#xFF08;&#x6BD4;&#x5982;emacs&#x751F;&#x6210;&#x7684;&#x4E34;&#x65F6;&#x6587;&#x4EF6; <em>file</em> &#x547D;&#x540D;&#x4E3A; <em>file~</em> &#xFF09;&#x3002;&#x624B;&#x52A8;&#x5907;&#x4EFD;&#x4E5F;&#x53EF;&#x80FD;&#x6709;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF08;&#x8003;&#x8651;&#x590D;&#x5236; <em>file</em> &#x5230; <em>file.old</em> &#x7684;&#x60C5;&#x51B5;&#xFF09;&#x3002;&#x5E94;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E5F;&#x53EF;&#x80FD;&#x5728;&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x7684;&#x65F6;&#x5019;&#x4E3A;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x7684; <em>&#x5FEB;&#x7167;</em> &#xFF0C;&#x8FD9;&#x4E9B;&#x53EF;&#x80FD;&#x4E5F;&#x80FD;&#x901A;&#x8FC7;web&#x8BBF;&#x95EE;&#x5230;&#xFF0C;&#x5BF9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x4F46;&#x4E0D;&#x540C;&#x7684;&#x5A01;&#x80C1;&#x3002;</p>
+<p>&#x603B;&#x4E4B;&#xFF0C;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x4EA7;&#x751F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;web&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x540C;&#x65B9;&#x5F0F;&#x5904;&#x7406;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x590D;&#x5236; <em>login.asp</em> &#x4E3A; <em>login.asp.old</em>&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x4E0B;&#x8F7D; <em>login.asp</em> &#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;&#x56E0;&#x4E3A; <em>login.asp.old</em> &#x7531;&#x4E8E;&#x4ED6;&#x7684;&#x6269;&#x5C55;&#x540D;&#x53EF;&#x80FD;&#x5F53;&#x4F5C;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x88AB;&#x6267;&#x884C;&#x3002;&#x6362;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x8BBF;&#x95EE; <em>login.asp</em> &#x4F1A;&#x5F15;&#x8D77;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6267;&#x884C; <em>login.asp</em> &#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x7136;&#x800C;&#x8BBF;&#x95EE; <em>login.asp.old</em> &#x5BFC;&#x81F4; <em>login.asp.old</em> &#x7684;&#x5185;&#x5BB9;&#xFF08;&#x4E8B;&#x5B9E;&#x4E0A;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4EE3;&#x7801;&#xFF09;&#x88AB;&#x5F53;&#x4F5C;&#x6587;&#x672C;&#x8FD4;&#x56DE;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x663E;&#x793A;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x5B89;&#x5168;&#x98CE;&#x9669;&#xFF0C;&#x56E0;&#x4E3A;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x88AB;&#x6CC4;&#x9732;&#x4E86;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x6765;&#x8BF4;&#x66B4;&#x9732;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x4E2A;&#x574F;&#x4E3B;&#x610F;&#x3002;&#x4E0D;&#x4EC5;&#x4EC5;&#x66B4;&#x9732;&#x4E86;&#x4E0D;&#x5FC5;&#x987B;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x63ED;&#x9732;&#x4E86;&#x5E94;&#x7528;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x8DEF;&#x5F84;&#x540D;&#x79F0;&#x3001;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x63D0;&#x4F9B;&#x5E2E;&#x52A9;&#x3002;&#x66F4;&#x4E0D;&#x8981;&#x8BF4;&#x5F88;&#x591A;&#x811A;&#x672C;&#x76F4;&#x63A5;&#x5185;&#x5D4C;&#x660E;&#x6587;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF08;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7C97;&#x5FC3;&#x7684;&#x975E;&#x5E38;&#x5371;&#x9669;&#x7684;&#x7F16;&#x7801;&#x5B9E;&#x8DF5;&#xFF09;&#x3002;</p>
+<p>&#x5176;&#x4ED6;&#x5F15;&#x8D77;&#x672A;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x7684;&#x60C5;&#x51B5;&#x53D6;&#x51B3;&#x4E8E;&#x8BBE;&#x8BA1;&#x6216;&#x8FD9;&#x914D;&#x7F6E;&#x9009;&#x62E9;&#xFF0C;&#x5F53;&#x5141;&#x8BB8;&#x4E0D;&#x540C;&#x79CD;&#x7C7B;&#x7684;&#x5E94;&#x7528;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3001;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x5728;web&#x670D;&#x52A1;&#x5668;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#x65F6;&#x5C31;&#x4F1A;&#x53D1;&#x751F;&#x3002;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x6CA1;&#x6709;&#x653E;&#x5728;&#x80FD;&#x901A;&#x8FC7;web&#x8BBF;&#x95EE;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x7406;&#x7531;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x53EA;&#x88AB;&#x5E94;&#x7528;&#x5C42;&#x8BBF;&#x95EE;&#xFF0C;&#x53EA;&#x88AB;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x672C;&#x8EAB;&#x4F7F;&#x7528;&#xFF08;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4E0D;&#x540C;&#x7528;&#x6237;&#xFF09;&#x3002;</p>
+<h4 id="&#x5A01;&#x80C1;">&#x5A01;&#x80C1;</h4>
+<p>&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x548C;&#x672A;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x5BF9;web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5B89;&#x5168;&#x9020;&#x6210;&#x591A;&#x79CD;&#x5A01;&#x80C1;&#xFF1A;</p>
+<ul>
+<li>&#x672A;&#x5F15;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x66B4;&#x9732;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x6709;&#x52A9;&#x4E8E;&#x653B;&#x51FB;&#x884C;&#x4E3A;&#xFF1B;&#x6BD4;&#x5982;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x51ED;&#x8BC1;&#x4FE1;&#x606F;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x5176;&#x4ED6;&#x9690;&#x85CF;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6BD4;&#x5982;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x7B49;&#x7B49;&#x3002;</li>
+<li>&#x672A;&#x5F15;&#x7528;&#x7684;&#x9875;&#x9762;&#x53EF;&#x80FD;&#x80FD;&#x591F;&#x5305;&#x542B;&#x653B;&#x51FB;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5F3A;&#x5927;&#x529F;&#x80FD;&#x51FD;&#x6570;&#xFF1B;&#x6BD4;&#x5982;&#x7BA1;&#x7406;&#x9875;&#x9762;&#x4E0D;&#x5E94;&#x8BE5;&#x4ECE;&#x516C;&#x5F00;&#x9875;&#x9762;&#x5185;&#x5BB9;&#x4E2D;&#x83B7;&#x5F97;&#xFF0C;&#x4F46;&#x662F;&#x80FD;&#x591F;&#x88AB;&#x5DF2;&#x77E5;&#x8DEF;&#x5F84;&#x7684;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>&#x65E7;&#x6587;&#x4EF6;&#x548C;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x5728;&#x8FD1;&#x671F;&#x7248;&#x672C;&#x4E2D;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x7684;&#x6F0F;&#x6D1E;&#xFF1B;&#x6BD4;&#x5982; <em>viewdoc.old.jsp</em> &#x53EF;&#x80FD;&#x5305;&#x542B;&#x76EE;&#x5F55;&#x904D;&#x5386;&#x6F0F;&#x6D1E;&#xFF0C;&#x800C; <em>viewdoc.jsp</em> &#x4E2D;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x6F0F;&#x6D1E;&#x4ECD;&#x7136;&#x53EF;&#x80FD;&#x88AB;&#x53D1;&#x73B0;&#x65E7;&#x7248;&#x672C;&#x7684;&#x6076;&#x610F;&#x4EBA;&#x5458;&#x5229;&#x7528;&#x3002;</li>
+<li>&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x66B4;&#x9732;&#x9875;&#x9762;&#x6E90;&#x4EE3;&#x7801;&#xFF1B;&#x6BD4;&#x5982;&#x8BF7;&#x6C42; <em>viewdoc.bak</em> &#x53EF;&#x80FD;&#x8FD4;&#x56DE; <em>viewdoc.jsp</em> &#x7684;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x901A;&#x8FC7;&#x8BC4;&#x5BA1;&#x6E90;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x53D1;&#x73B0;&#x90A3;&#x4E9B;&#x5F88;&#x96BE;&#x4ECE;&#x76F2;&#x76EE;&#x7684;&#x8BF7;&#x6C42;&#x4E2D;&#x53D1;&#x73B0;&#x7684;&#x6F0F;&#x6D1E;&#x3002;</li>
+<li>&#x5907;&#x4EFD;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x5305;&#x542B;web&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF08;&#x751A;&#x81F3;web&#x6839;&#x76EE;&#x5F55;&#x4E4B;&#x5916;&#x7684;&#x6587;&#x4EF6;&#xFF09;&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x653B;&#x51FB;&#x8005;&#x80FD;&#x5FEB;&#x901F;&#x679A;&#x4E3E;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#xFF0C;&#x5305;&#x62EC;&#x672A;&#x5F15;&#x7528;&#x7684;&#x9875;&#x9762;&#x3001;&#x6E90;&#x4EE3;&#x7801;&#x548C;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x3002;&#x4F8B;&#x5982;&#x5982;&#x679C;&#x4F60;&#x9057;&#x5FD8;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <em>myservlets.jar.old</em> &#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x4F60;&#x5B9E;&#x73B0; servlet&#x7C7B;&#x7684;&#x5907;&#x4EFD;&#xFF0C;&#x90A3;&#x4E48;&#x8BB8;&#x591A;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x53EF;&#x80FD;&#x88AB;&#x53CD;&#x7F16;&#x8BD1;&#x548C;&#x9006;&#x5411;&#x5DE5;&#x7A0B;&#x4E2D;&#x83B7;&#x5F97;&#x3002;</li>
+<li>&#x5728;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x590D;&#x5236;&#x6216;&#x7F16;&#x8F91;&#x6587;&#x4EF6;&#x4E0D;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x4F46;&#x662F;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x4F8B;&#x5982;&#x5728;windows&#x73AF;&#x5883;&#x4E0B;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x6587;&#x4EF6;&#x88AB;&#x590D;&#x5236;&#x65F6;&#x5019;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x7ED9;&#x6587;&#x4EF6;&#x52A0;&#x4E0A;&#x672C;&#x5730;&#x8BED;&#x8A00;&#x5316;&#x7684;&#x201C;&#x590D;&#x5236;&#x201D;&#x5B57;&#x7B26;&#x3002;&#x7531;&#x4E8E;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x4E0D;&#x4F1A;&#x88AB;&#x670D;&#x52A1;&#x5668;&#x4EE5;&#x660E;&#x6587;&#x65B9;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x4F1A;&#x66B4;&#x9732;&#x6E90;&#x4EE3;&#x7801;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4E5F;&#x53EF;&#x80FD;&#x5341;&#x5206;&#x6709;&#x5BB3;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x88AB;&#x5E9F;&#x5F03;&#x6216;&#x5305;&#x542B;&#x9519;&#x8BEF;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5F53;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BCA;&#x65AD;&#x4FE1;&#x606F;&#x6216;&#x8BB8;&#x80FD;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x5E26;&#x6765;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x5173;&#x4E8E;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;URL&#x53C2;&#x6570;&#x4E2D;&#x4F20;&#x9012;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF0C;&#x4F1A;&#x8BDD;ID&#xFF0C;&#x5DF2;&#x8BBF;&#x95EE;URL&#xFF08;&#x53EF;&#x80FD;&#x66B4;&#x9732;&#x4E00;&#x4E9B;&#x672A;&#x5F15;&#x7528;&#x5185;&#x5BB9;&#xFF09;&#x7B49;&#x7B49;&#x3002;&#x5176;&#x4ED6;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF08;&#x5982;FTP&#x65E5;&#x5FD7;&#xFF09;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x7EF4;&#x62A4;&#x7CFB;&#x7EDF;&#x60C5;&#x51B5;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5FEB;&#x7167;&#x4E5F;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x90A3;&#x4E9B;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x7684;&#x5B58;&#x5728;&#x6F0F;&#x6D1E;&#x7684;&#x4EE3;&#x7801;&#x62F7;&#x8D1D;&#x3002;&#x4F8B;&#x5982; <em>/.snapshot/monthly.1/view.php</em> &#x53EF;&#x80FD;&#x5305;&#x542B;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x7684;&#x5B58;&#x5728;&#x76EE;&#x5F55;&#x904D;&#x5386;&#x697C;&#x7684;&#x7684; <em>/view.php</em> &#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x6F0F;&#x6D1E;&#x80FD;&#x88AB;&#x4EFB;&#x4F55;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x5C31;&#x7248;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x4EBA;&#x5229;&#x7528;&#x3002;</li>
+</ul>
+<h3 id="&#x5982;&#x4F55;&#x6D4B;&#x8BD5;">&#x5982;&#x4F55;&#x6D4B;&#x8BD5;</h3>
+<h4 id="&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;">&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</h4>
+<p>&#x6D4B;&#x8BD5;&#x672A;&#x5F15;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x5305;&#x62EC;&#x81EA;&#x52A8;&#x5316;&#x548C;&#x624B;&#x52A8;&#x6280;&#x5DE7;&#xFF0C;&#x901A;&#x5E38;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x4E00;&#x7CFB;&#x5217;&#x6280;&#x5DE7;&#x7684;&#x7EC4;&#x5408;&#xFF1A;</p>
+<h5 id="&#x4ECE;&#x53D1;&#x5E03;&#x7684;&#x516C;&#x5F00;&#x5185;&#x5BB9;&#x4E2D;&#x63A8;&#x65AD;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x6A21;&#x5F0F;">&#x4ECE;&#x53D1;&#x5E03;&#x7684;&#x516C;&#x5F00;&#x5185;&#x5BB9;&#x4E2D;&#x63A8;&#x65AD;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x6A21;&#x5F0F;</h5>
+<p>&#x679A;&#x4E3E;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9875;&#x9762;&#x548C;&#x529F;&#x80FD;&#x3002;&#x8FD9;&#x80FD;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x624B;&#x52A8;&#x5B8C;&#x6210;&#xFF0C;&#x6216;&#x4F7F;&#x7528;&#x5E94;&#x7528;&#x722C;&#x866B;&#x5DE5;&#x5177;&#x3002;&#x8BB8;&#x591A;&#x5E94;&#x7528;&#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x8BC6;&#x522B;&#x7684;&#x547D;&#x540D;&#x6A21;&#x5F0F;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x53EF;&#x8BC6;&#x522B;&#x7684;&#x8BCD;&#x8BED;&#x6765;&#x7EC4;&#x7EC7;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x548C;&#x8D44;&#x6E90;&#x3002;&#x4ECE;&#x5DF2;&#x7ECF;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x547D;&#x540D;&#x6A21;&#x5F0F;&#xFF0C;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x63A8;&#x65AD;&#x51FA;&#x672A;&#x5F15;&#x7528;&#x7684;&#x9875;&#x9762;&#x7684;&#x540D;&#x79F0;&#x548C;&#x76EE;&#x5F55;&#x3002;&#x4F8B;&#x5982;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x4E3A; <em>viewuser.asp</em> &#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8BD5;&#x7740;&#x627E;&#x627E; <em>edituser.asp</em>&#x3001;<em>adduser.asp</em>&#x548C;<em>deleteuser.asp</em>&#x3002;&#x5982;&#x679C;&#x627E;&#x5230;&#x4E00;&#x4E2A; <em>/app/user</em> &#x76EE;&#x5F55;&#xFF0C;&#x53EF;&#x4EE5;&#x8BD5;&#x7740;&#x627E;&#x627E; <em>/app/admin</em> &#x548C; <em>/app/manager</em> &#x3002;</p>
+<h5 id="&#x5DF2;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x7EBF;&#x7D22;">&#x5DF2;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x7EBF;&#x7D22;</h5>
+<p>&#x8BB8;&#x591A;web&#x5E94;&#x7528;&#x4F1A;&#x5728;&#x5DF2;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x7559;&#x4E0B;&#x901A;&#x5F80;&#x9690;&#x85CF;&#x9875;&#x9762;&#x548C;&#x9690;&#x85CF;&#x529F;&#x80FD;&#x7684;&#x7EBF;&#x7D22;&#x3002;&#x8FD9;&#x4E9B;&#x7EBF;&#x7D22;&#x5F80;&#x5F80;&#x80FD;&#x5728;JavaScript&#x6587;&#x4EF6;&#x548C;HTML&#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x53D1;&#x73B0;&#x3002;&#x6240;&#x6709;&#x5DF2;&#x7ECF;&#x53D1;&#x5E03;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x90FD;&#x5E94;&#x8BE5;&#x88AB;&#x624B;&#x52A8;&#x8BC4;&#x5BA1;&#x6765;&#x9274;&#x522B;&#x5173;&#x4E8E;&#x5176;&#x4ED6;&#x9875;&#x9762;&#x548C;&#x529F;&#x80FD;&#x7684;&#x7EBF;&#x7D22;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<p>&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x6CE8;&#x91CA;&#x548C;&#x6CE8;&#x91CA;&#x6389;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x90E8;&#x5206;&#x53EF;&#x80FD;&#x6307;&#x5411;&#x9690;&#x85CF;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>&lt;!-- &lt;A HREF=&quot;uploadfile.jsp&quot;&gt;Upload a document to the server&lt;/A&gt; --&gt;
+&lt;!-- Link removed while bugs in uploadfile.jsp are fixed          --&gt;
+</code></pre><p>JavaScript&#x53EF;&#x80FD;&#x5305;&#x542B;&#x7279;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x7528;&#x6237;&#x9875;&#x9762;&#x94FE;&#x63A5;&#xFF1A;</p>
+<pre><code>var adminUser=false;
+:
+if (adminUser) menu.add (new menuItem (&quot;Maintain users&quot;, &quot;/admin/useradmin.jsp&quot;));
+</code></pre><p>HTML&#x9875;&#x9762;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x7981;&#x7528;SUBMIT&#x5143;&#x7D20;&#x7684;&#x9690;&#x85CF;&#x8868;&#x5355;&#xFF1A;</p>
+<pre><code>&lt;FORM action=&quot;forgotPassword.jsp&quot; method=&quot;post&quot;&gt;
+    &lt;INPUT type=&quot;hidden&quot; name=&quot;userID&quot; value=&quot;123&quot;&gt;
+    &lt;!-- &lt;INPUT type=&quot;submit&quot; value=&quot;Forgot Password&quot;&gt; --&gt;
+&lt;/FORM&gt;
+</code></pre><p>&#x53E6;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x672A;&#x5F15;&#x7528;&#x7684;&#x76EE;&#x5F55;&#x7684;&#x7EBF;&#x7D22;&#x5728;<em>/robots.txt</em>&#x6587;&#x4EF6;&#x4E4B;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x63D0;&#x4F9B;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>User-agent: *
+Disallow: /Admin
+Disallow: /uploads
+Disallow: /backup
+Disallow: /~jbloggs
+Disallow: /include
+</code></pre><h5 id="&#x76F2;&#x76EE;&#x731C;&#x6D4B;">&#x76F2;&#x76EE;&#x731C;&#x6D4B;</h5>
+<p>&#x5728;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x8BF7;&#x6C42;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5E38;&#x7528;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x6765;&#x5C1D;&#x8BD5;&#x731C;&#x6D4B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x3002;&#x4E0B;&#x9762;&#x5305;&#x542B;netcat&#x7684;&#x5305;&#x88C5;&#x811A;&#x672C;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x5B9E;&#x65BD;&#x57FA;&#x672C;&#x7684;&#x731C;&#x6D4B;&#x653B;&#x51FB;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+
+server=www.targetapp.com
+port=80
+
+while read url
+do
+echo -ne &quot;$url\t&quot;
+echo -e &quot;GET /$url HTTP/1.0\nHost: $server\n&quot; | netcat $server $port | head -1
+done | tee outputfile
+</code></pre><p>&#x89C6;&#x670D;&#x52A1;&#x5668;&#x60C5;&#x51B5;&#x800C;&#x5B9A;&#xFF0C;GET&#x8BF7;&#x6C42;&#x53EF;&#x80FD;&#x7528;HEAD&#x8BF7;&#x6C42;&#x66FF;&#x4EE3;&#x6765;&#x52A0;&#x901F;&#x653B;&#x51FB;&#x3002;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;grep&#x8FC7;&#x6EE4;&#x6765;&#x83B7;&#x5F97;&#x6709;&#x8DA3;&#x7684;&#x54CD;&#x5E94;&#x3002;200&#x54CD;&#x5E94;&#x7801;&#xFF08;OK&#xFF09;&#x901A;&#x5E38;&#x8868;&#x660E;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x81EA;&#x7531;&#x88AB;&#x53D1;&#x73B0;&#xFF08;&#x5047;&#x8BBE;&#x670D;&#x52A1;&#x5668;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x201C;&#x672A;&#x53D1;&#x73B0;&#x201D;200&#x54CD;&#x5E94;&#x9875;&#x9762;&#xFF09;&#x3002;&#x540C;&#x65F6;&#x4E5F;&#x67E5;&#x627E;301&#x54CD;&#x5E94;&#xFF08;Moved&#xFF09;&#x3001;302&#x54CD;&#x5E94;&#xFF08;Found&#xFF09;&#x3001;401&#x54CD;&#x5E94;&#xFF08;Unauthorized&#xFF09;&#x3001;403&#x54CD;&#x5E94;&#xFF08;Forrbidden&#xFF09;&#x548C;500&#x54CD;&#x5E94;&#xFF08;Internal error&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x54CD;&#x5E94;&#x4E5F;&#x8868;&#x660E;&#x76EE;&#x5F55;&#x6216;&#x81EA;&#x7531;&#x503C;&#x5F97;&#x6DF1;&#x5165;&#x8C03;&#x67E5;&#x3002;</p>
+<p>&#x57FA;&#x672C;&#x7684;&#x731C;&#x6D4B;&#x653B;&#x51FB;&#x5E94;&#x8BE5;&#x5728;web&#x6839;&#x76EE;&#x5F55;&#x4E2D;&#x548C;&#x5176;&#x4ED6;&#x88AB;&#x9274;&#x522B;&#x51FA;&#x6765;&#x7684;&#xFF08;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x679A;&#x4E3E;&#x624B;&#x6BB5;&#xFF09;&#x4E2D;&#x8FD0;&#x884C;&#x3002;&#x66F4;&#x591A;&#x9AD8;&#x7EA7;/&#x6709;&#x6548;&#x7684;&#x731C;&#x6D4B;&#x653B;&#x51FB;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x8FC7;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5DF2;&#x77E5;&#x533A;&#x57DF;&#x6765;&#x9274;&#x522B;&#x6269;&#x5C55;&#x540D;&#xFF08;&#x5982;jsp&#xFF0C;aspx&#xFF0C;html&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x5B57;&#x5178;&#x52A0;&#x4E0A;&#x8FD9;&#x4E9B;&#x6269;&#x5C55;&#x540D;&#xFF08;&#x6216;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x6269;&#x5C55;&#x540D;&#x5B57;&#x5178;&#xFF0C;&#x5982;&#x679C;&#x6761;&#x4EF6;&#x5141;&#x8BB8;&#xFF09;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x4ECE;&#x5176;&#x4ED6;&#x679A;&#x4E3E;&#x6280;&#x5DE7;&#x4E2D;&#x53D1;&#x73B0;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4ECE;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x884D;&#x751F;&#x51FA;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x5178;&#x3002;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x5E38;&#x89C1;&#x7684;&#x6587;&#x4EF6;&#x4FEE;&#x9970;&#x6269;&#x5C55;&#xFF08;&#x5305;&#x62EC;~&#xFF0C;bak&#xFF0C;txt&#xFF0C;src&#xFF0C;dev&#xFF0C;old&#xFF0C;inc&#xFF0C;orig&#xFF0C;copy&#xFF0C;tmp&#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x6587;&#x4EF6;&#x540D;&#x7684;&#x524D;&#x9762;&#x3001;&#x540E;&#x9762;&#x52A0;&#x5165;&#x8FD9;&#x4E9B;&#x6269;&#x5C55;&#xFF0C;&#x6216;&#x76F4;&#x63A5;&#x66FF;&#x4EE3;&#x6587;&#x4EF6;&#x540D;&#x3002;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;windows&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x5F53;&#x6587;&#x4EF6;&#x88AB;&#x590D;&#x5236;&#x65F6;&#x5019;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x7ED9;&#x6587;&#x4EF6;&#x52A0;&#x4E0A;&#x672C;&#x5730;&#x8BED;&#x8A00;&#x5316;&#x7684;&#x201C;&#x590D;&#x5236;&#x201D;&#x5B57;&#x7B26;&#x3002;&#x7531;&#x4E8E;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x4F1A;&#x66B4;&#x9732;&#x6E90;&#x4EE3;&#x7801;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9519;&#x8BEF;&#xFF0C;&#x80FD;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x5E26;&#x6765;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<h5 id="&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x6F0F;&#x6D1E;&#x548C;&#x9519;&#x8BEF;&#x914D;&#x7F6E;&#x4E2D;&#x83B7;&#x5F97;&#x7684;&#x4FE1;&#x606F;">&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x6F0F;&#x6D1E;&#x548C;&#x9519;&#x8BEF;&#x914D;&#x7F6E;&#x4E2D;&#x83B7;&#x5F97;&#x7684;&#x4FE1;&#x606F;</h5>
+<p>&#x6700;&#x663E;&#x800C;&#x6613;&#x89C1;&#x5728;&#x9519;&#x8BEF;&#x914D;&#x7F6E;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x66B4;&#x9732;&#x672A;&#x5F15;&#x7528;&#x9875;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x76EE;&#x5F55;&#x5217;&#x4E3E;&#x6D4F;&#x89C8;&#x3002;&#x8BF7;&#x6C42;&#x679A;&#x4E3E;&#x83B7;&#x5F97;&#x7684;&#x76EE;&#x5F55;&#x6765;&#x9274;&#x522B;&#x90A3;&#x4E9B;&#x76EE;&#x5F55;&#x63D0;&#x4F9B;&#x76EE;&#x5F55;&#x5217;&#x4E3E;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5927;&#x591A;&#x5728;&#x4E2A;&#x4EBA;web&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x53D1;&#x73B0;&#x7684;&#x6F0F;&#x6D1E;&#x80FD;&#x5141;&#x8BB8;&#x653B;&#x51FB;&#x8005;&#x679A;&#x4E3E;&#x672A;&#x5F15;&#x7528;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<ul>
+<li>Apache ?M=D &#x76EE;&#x5F55;&#x5217;&#x4E3E;&#x6F0F;&#x6D1E;</li>
+<li>&#x4E0D;&#x540C;&#x7684;IIS&#x811A;&#x672C;&#x6E90;&#x4EE3;&#x7801;&#x66B4;&#x9732;&#x6F0F;&#x6D1E;</li>
+<li>IIS WebDAV &#x76EE;&#x5F55;&#x5217;&#x4E3E;&#x6F0F;&#x6D1E;</li>
+</ul>
+<h5 id="&#x5229;&#x7528;&#x516C;&#x5F00;&#x4FE1;&#x606F;">&#x5229;&#x7528;&#x516C;&#x5F00;&#x4FE1;&#x606F;</h5>
+<p>&#x4E00;&#x4E9B;&#x9762;&#x5411;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x5E94;&#x7528;&#x9875;&#x9762;&#x548C;&#x529F;&#x80FD;&#x53EF;&#x80FD;&#x4E0D;&#x88AB;&#x5E94;&#x7528;&#x672C;&#x8EAB;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x53EF;&#x80FD;&#x88AB;&#x5916;&#x90E8;&#x516C;&#x5F00;&#x4E3B;&#x4F53;&#x5F15;&#x7528;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x4E0D;&#x540C;&#x5F15;&#x7528;&#x6E90;&#xFF1A;</p>
+<ul>
+<li>&#x9875;&#x9762;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x5F52;&#x6863;&#x4E2D;&#x3002;&#x4F8B;&#x5982; <em>1998results.asp</em> &#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x4E0D;&#x518D;&#x516C;&#x53F8;&#x7684;&#x7F51;&#x7AD9;&#x4E0A;&#x88AB;&#x94FE;&#x63A5;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x80FD;&#x8FD8;&#x5B58;&#x5728;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x548C;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;&#x4E00;&#x4E9B;&#x65E7;&#x811A;&#x672C;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x653B;&#x7834;&#x6574;&#x4E2A;&#x7AD9;&#x70B9;&#x7684;&#x6F0F;&#x6D1E;&#x3002; <em>site:</em> Google&#x641C;&#x7D22;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x80FD;&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x76F8;&#x5173;&#x57DF;&#x540D;&#xFF0C;&#x5982; <em>site:www.example.com</em>&#x3002;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x4E5F;&#x6709;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6280;&#x5DE7;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x7167; &#x672C;&#x6307;&#x5357;&#x7684; <em>Google Hacking</em> &#x90E8;&#x5206;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6280;&#x5DE7;&#x6765;&#x6253;&#x78E8;&#x4F60;&#x7684;&#x6D4B;&#x8BD5;&#x6280;&#x827A;&#x3002;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x4E0D;&#x88AB;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5F15;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x88AB;Google&#x6536;&#x5F55;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4ED6;&#x4EEC;&#x5B58;&#x5728;&#x4E8E;&#x53EF;&#x5217;&#x4E3E;&#x6D4F;&#x89C8;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x8BDD;&#xFF0C;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x53EF;&#x80FD;&#x4E5F;&#x80FD;&#x6536;&#x5F55;&#x4ED6;&#x4EEC;&#x3002;</li>
+<li>&#x6B64;&#x5916;&#xFF0C;Google&#x548C;Yahoo&#x53EF;&#x80FD;&#x7F13;&#x5B58;&#x4ED6;&#x4EEC;&#x673A;&#x5668;&#x4EBA;&#x53D1;&#x73B0;&#x7684;&#x9875;&#x9762;&#x3002;&#x751A;&#x81F3; <em>1998results.asp</em> &#x5DF2;&#x7ECF;&#x88AB;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x5668;&#x79FB;&#x9664;&#xFF0C;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x4E2D;&#x4E5F;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x5176;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x3002;&#x88AB;&#x7F13;&#x5B58;&#x7684;&#x7248;&#x672C;&#x4E5F;&#x80FD;&#x5305;&#x542B;&#x5F15;&#x7528;&#x5176;&#x4ED6;&#x9690;&#x85CF;&#x5185;&#x5BB9;&#x7684;&#x7EBF;&#x7D22;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x88AB;&#x76EE;&#x6807;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5F15;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#x53EF;&#x80FD;&#x88AB;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x7AD9;&#x70B9;&#x94FE;&#x63A5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x5728;&#x7EBF;&#x652F;&#x4ED8;&#x7684;&#x5E94;&#x7528;&#x53EF;&#x80FD;&#x5305;&#x62EC;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5B9A;&#x5236;&#x7684;&#x529F;&#x80FD;&#x53EA;&#x80FD;&#x88AB;&#x7AD9;&#x70B9;&#x7684;&#x5BA2;&#x6237;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<h5 id="&#x6587;&#x4EF6;&#x540D;&#x8FC7;&#x6EE4;&#x7ED5;&#x8FC7;">&#x6587;&#x4EF6;&#x540D;&#x8FC7;&#x6EE4;&#x7ED5;&#x8FC7;</h5>
+<p>&#x56E0;&#x4E3A;&#x4E00;&#x4E9B;&#x9ED1;&#x540D;&#x5355;&#x8FC7;&#x6EE4;&#x5668;&#x662F;&#x57FA;&#x4E8E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x540D;&#x5C55;&#x5F00;&#x7684;&#x7279;&#x6027;&#xFF08;&#x5F80;&#x5F80;&#x6CA1;&#x6709;&#x88AB;&#x5F00;&#x53D1;&#x8005;&#x9884;&#x6599;&#x5230;&#xFF09;&#x3002;&#x6D4B;&#x8BD5;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x540D;&#x88AB;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3001;web&#x670D;&#x52A1;&#x5668;&#x3001;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x540D;&#x8F6C;&#x6362;&#x7684;&#x4E0D;&#x540C;&#x5DEE;&#x5F02;&#x6765;&#x7ED5;&#x8FC7;&#x8FC7;&#x6EE4;&#x5668;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; Windows 8.3 &#x6587;&#x4EF6;&#x540D;&#x6269;&#x5C55;&#x3002;</p>
+<pre><code>&quot;c:\program files&quot; &#x53D8;&#x6210;&#x4E86; &quot;C:\PROGRA~1&quot;
+
+&#x89C4;&#x5219;&#xFF1A;
+* &#x79FB;&#x9664;&#x4E0D;&#x517C;&#x5BB9;&#x5B57;&#x7B26;
+* &#x5C06;&#x7A7A;&#x683C;&#x8F6C;&#x6362;&#x6210;&#x4E0B;&#x5212;&#x7EBF;
+* &#x53D6;&#x6587;&#x4EF6;&#x540D;&#x524D;&#x516D;&#x4E2A;&#x5B57;&#x7B26;
+* &#x52A0;&#x5165;&#x201C;~&lt;&#x6570;&#x5B57;&gt;&#x201D;&#x6765;&#x533A;&#x5206;&#x76F8;&#x540C;6&#x4E2A;&#x521D;&#x59CB;&#x5B57;&#x7B26;&#x7684;&#x6587;&#x4EF6;
+* &#x5728;&#x6700;&#x521D;&#x7684;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x51B2;&#x7A81;&#x540E;&#x8F6C;&#x6362;&#x5C06;&#x6539;&#x53D8;&#xFF08;&#xFF1F;&#xFF09;
+* &#x622A;&#x53D6;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x524D;&#x4E09;&#x4F4D;
+* &#x5C06;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x5927;&#x5199;
+</code></pre><h4 id="&#x7070;&#x76D2;&#x6D4B;&#x8BD5;">&#x7070;&#x76D2;&#x6D4B;&#x8BD5;</h4>
+<p>&#x5B9E;&#x65BD;&#x7070;&#x76D2;&#x6D4B;&#x8BD5;&#x9700;&#x8981;&#x68C0;&#x67E5;web&#x76EE;&#x5F55;&#x4E0B;&#x88AB;web&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x6240;&#x6709;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x3002;&#x7406;&#x8BBA;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E2A;&#x68C0;&#x67E5;&#x5E94;&#x8BE5;&#x624B;&#x52A8;&#x5B8C;&#x6210;&#x6765;&#x786E;&#x4FDD;&#x5B8C;&#x5907;&#x3002;&#x4F46;&#x662F;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;&#x7684;&#x547D;&#x540D;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x811A;&#x672C;&#x6765;&#x641C;&#x5BFB;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x7F16;&#x8F91;&#x5668;&#x53EF;&#x80FD;&#x5728;&#x5907;&#x4EFD;&#x62F7;&#x8D1D;&#x4E0A;&#x52A0;&#x5165;&#x53EF;&#x8BC6;&#x522B;&#x7684;&#x6269;&#x5C55;&#x6216;&#x540E;&#x7F00;&#xFF0C;&#x4EBA;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x52A0;&#x5165;&#x201C;.old&#x201D;&#x6216;&#x7C7B;&#x4F3C;&#x7684;&#x53EF;&#x9884;&#x6D4B;&#x7684;&#x6269;&#x5C55;&#x540D;&#x5B57;&#x3002;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x7B56;&#x7565;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5468;&#x671F;&#x6027;&#x7684;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x6765;&#x68C0;&#x67E5;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#xFF0C;&#x5E76;&#x9274;&#x522B;&#x51FA;&#x662F;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x8FD8;&#x662F;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x540C;&#x65F6;&#x5B9E;&#x65BD;&#x624B;&#x52A8;&#x68C0;&#x6D4B;&#xFF08;&#x66F4;&#x52A0;&#x8017;&#x65F6;&#x7684;&#xFF09;&#x3002;</p>
+<h3 id="&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;">&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;</h3>
+<ul>
+<li>&#x6F0F;&#x6D1E;&#x8BC4;&#x4F30;&#x5DE5;&#x5177;&#x6765;&#x53D1;&#x73B0;&#x6709;&#x901A;&#x7528;&#x540D;&#x5B57;&#x7684;web&#x76EE;&#x5F55;&#xFF08;&#x5982;&#x201C;admin&#x201D;&#xFF0C;&#x201C;test&#x201D;&#xFF0C;&#x201C;backup&#x201D;&#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x548C;&#x4E00;&#x4E9B;&#x5141;&#x8BB8;&#x76EE;&#x5F55;&#x6D4F;&#x89C8;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x679C;&#x4F60;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#x76EE;&#x5F55;&#x5217;&#x4E3E;&#xFF0C;&#x4E5F;&#x5E94;&#x8BE5;&#x68C0;&#x67E5;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x5907;&#x4EFD;&#x6269;&#x5C55;&#x540D;&#x3002;&#x8003;&#x8651;Nessus(<a href="http://www.nessus.org)&#xFF0C;" target="_blank">http://www.nessus.org)&#xFF0C;</a> Nikto2(<a href="http://www.cirt.net/code/nikto.shtml" target="_blank">http://www.cirt.net/code/nikto.shtml</a>) &#xFF0C;Wikto (<a href="http://www.sensepost.com/research/wikto/)&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8FD9;&#x4E9B;&#x4E5F;&#x652F;&#x6301;Google" target="_blank">http://www.sensepost.com/research/wikto/)&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8FD9;&#x4E9B;&#x4E5F;&#x652F;&#x6301;Google</a> Hacking&#x7B56;&#x7565;&#x3002;</li>
+<li>Web&#x722C;&#x866B;&#x5DE5;&#x5177;&#xFF1A; wget (<a href="http://www.gnu.org/software/wget/" target="_blank">http://www.gnu.org/software/wget/</a>,   <a href="http://www.interlog.com/~tcharron/wgetwin.html" target="_blank">http://www.interlog.com/~tcharron/wgetwin.html</a>); Sam Spade (<a href="http://www.samspade.org" target="_blank">http://www.samspade.org</a>); Spike proxy includes a web site crawler function (<a href="http://www.immunitysec.com/spikeproxy.html" target="_blank">http://www.immunitysec.com/spikeproxy.html</a>); Xenu (<a href="http://home.snafu.de/tilman/xenulink.html" target="_blank">http://home.snafu.de/tilman/xenulink.html</a>); curl (<a href="http://curl.haxx.se" target="_blank">http://curl.haxx.se</a>). &#x6709;&#x4E9B;&#x5DE5;&#x5177;&#x5DF2;&#x7ECF;&#x88AB;&#x6807;&#x51C6;Linux&#x53D1;&#x5E03;&#x7248;&#x672C;&#x4E2D;&#x96C6;&#x6210;&#x3002;</li>
+<li>Web&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x901A;&#x5E38;&#x5305;&#x542B;&#x8BC6;&#x522B;&#x9519;&#x8BEF;&#x94FE;&#x63A5;&#x548C;&#x672A;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+</ul>
+<h3 id="&#x6574;&#x6539;&#x63AA;&#x65BD;">&#x6574;&#x6539;&#x63AA;&#x65BD;</h3>
+<p>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x4FDD;&#x62A4;&#x7B56;&#x7565;&#xFF0C;&#x6D4B;&#x8BD5;&#x5E94;&#x8BE5;&#x88AB;&#x7ED3;&#x5408;&#x5B89;&#x5168;&#x7B56;&#x7565;&#xFF0C;&#x8FD9;&#x4E9B;&#x7B56;&#x7565;&#x5E94;&#x8BE5;&#x660E;&#x663E;&#x5730;&#x7981;&#x6B62;&#x5371;&#x9669;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x5728;web&#x670D;&#x52A1;&#x5668;&#x6216;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#x539F;&#x5730;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x574F;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x4E0D;&#x7ECF;&#x610F;&#x4EA7;&#x751F;&#x7F16;&#x8F91;&#x5668;&#x7684;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x3002;&#x4EE4;&#x4EBA;&#x60CA;&#x5947;&#x7684;&#x662F;&#x8FD9;&#x5F80;&#x5F80;&#x7ECF;&#x5E38;&#x53D1;&#x751F;&#xFF0C;&#x751A;&#x81F3;&#x89C1;&#x4E8E;&#x4E00;&#x4E9B;&#x5927;&#x7EC4;&#x7EC7;&#x3002;&#x5982;&#x679C;&#x4F60;&#x786E;&#x5B9E;&#x9700;&#x8981;&#x5728;&#x751F;&#x4EA7;&#x7CFB;&#x7EDF;&#x4E0A;&#x7F16;&#x8F91;&#x6587;&#x4EF6;&#xFF0C;&#x786E;&#x4FDD;&#x4F60;&#x6CA1;&#x6709;&#x9057;&#x7559;&#x4E0B;&#x4EFB;&#x4F55;&#x6CA1;&#x6709;&#x660E;&#x663E;&#x76EE;&#x5730;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8BA4;&#x6E05;&#x8FD9;&#x4E48;&#x505A;&#x7684;&#x98CE;&#x9669;&#x3002;</li>
+<li>&#x4ED4;&#x7EC6;&#x68C0;&#x67E5;web&#x670D;&#x52A1;&#x5668;&#x66B4;&#x9732;&#x5728;&#x5916;&#x9762;&#x7684;&#x90A3;&#x4E9B;&#x5B9E;&#x65BD;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;&#x7684;&#x6D3B;&#x52A8;&#xFF0C;&#x5982;&#x7BA1;&#x7406;&#x5458;&#x6D3B;&#x52A8;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5076;&#x5C14;&#x9700;&#x8981;&#x7ED9;&#x4E00;&#x7CFB;&#x5217;&#x76EE;&#x5F55;&#x505A;&#x6587;&#x4EF6;&#x5FEB;&#x7167;&#xFF08;&#x5F53;&#x7136;&#x4F60;&#x4E0D;&#x5E94;&#x8BE5;&#x5728;&#x751F;&#x4EA7;&#x7CFB;&#x7EDF;&#x4E0A;&#x8FD9;&#x4E48;&#x505A;&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x538B;&#x7F29;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x3002;&#x5C0F;&#x5FC3;&#x4E0D;&#x8981;&#x5FD8;&#x4E86;&#x8FD9;&#x4E9B;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x5408;&#x9002;&#x7684;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#x5E94;&#x8BE5;&#x6709;&#x52A9;&#x4E8E;&#x7BA1;&#x7406;&#x8FD9;&#x4E9B;&#x9057;&#x7559;&#x7684;&#x548C;&#x4E3A;&#x5F15;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5E94;&#x8BE5;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x4E0D;&#x521B;&#x5EFA;&#xFF08;&#x6216;&#x4F9D;&#x8D56;&#x4E8E;&#xFF09;&#x5728;web&#x76EE;&#x5F55;&#x6811;&#x4E0B;&#x88AB;web&#x670D;&#x52A1;&#x5668;&#x670D;&#x52A1;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x3001;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x5E94;&#x8BE5;&#x88AB;&#x5B58;&#x50A8;&#x4E0E;&#x65E0;&#x6CD5;&#x88AB;web&#x670D;&#x52A1;&#x5668;&#x8BBF;&#x95EE;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x6765;&#x5BF9;&#x6297;&#x53EF;&#x80FD;&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#x60C5;&#x51B5;&#xFF08;&#x4E0D;&#x8981;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x4FEE;&#x6539;&#xFF0C;&#x5982;&#x679C;web&#x76EE;&#x5F55;&#x53EF;&#x5199;&#xFF09;&#x3002;</li>
+<li>&#x5728;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x6839;&#x76EE;&#x5F55;&#x4F7F;&#x7528;&#x4E86;&#x5FEB;&#x7167;&#x6280;&#x5DE7;&#xFF0C;&#x90A3;&#x4E48;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5FEB;&#x7167;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;web&#x8BBF;&#x95EE;&#x3002;&#x914D;&#x7F6E;web&#x670D;&#x52A1;&#x5668;&#x6765;&#x62D2;&#x7EDD;&#x8FD9;&#x4E9B;&#x76EE;&#x5F55;&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x4F8B;&#x5982;&#x5728;apache&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;<pre><code>&lt;Location ~ &quot;.snapshot&quot;&gt;
+  Order deny,allow
+  Deny from all
+&lt;/Location&gt;
+</code></pre></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../web_application_security_testing/test_file_extensions_handling_for_sensitive_information_otg-config-003.html" class="navigation navigation-prev " aria-label="Previous page: 文件扩展名处理测试 (OTG-CONFIG-003)"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../web_application_security_testing/enumerate_infrastructure_and_application_admin_interfaces_otg-config-005.html" class="navigation navigation-next " aria-label="Next page: 枚举管理接口测试 (OTG-CONFIG-005)"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
