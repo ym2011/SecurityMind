@@ -1,0 +1,184 @@
+常见问题说明
+1.什么是APP风险漏洞？
+应用代码编写过程中出现的安全漏洞、编码隐患等。
+2.APP风险漏洞可能带来哪些危害？
+安全风险漏洞可能造成应用内信息泄露、远程代码执行、本地拒绝服务等多种安全问题，严重的可能影响应用正常运行。
+3.常见的APP漏洞危害有哪些？
+Log敏感信息泄露、web https校验错误忽略漏洞、sql注入漏洞等，这些风险漏洞都有可能给应用带来严重的安全隐患
+查看所有风险漏洞及危害
+4.我的APP发现有风险漏洞了，应该怎么办？
+a) 及时对应用风险漏洞进行修补，并养成良好的应用编程习惯;
+b) 使用加固类产品对应用进行安全加固，可降低风险漏洞被利用的可能性。
+
+android 移动应用app常见漏洞
+漏洞名称: Log敏感信息泄露
+漏洞描述: 程序运行期间打印了用户的敏感信息，造成泄露
+修改建议: 建议禁止隐私信息的log
+ 
+漏洞名称: web https校验错误忽略漏洞
+漏洞描述: 漏洞可导致中间人攻击
+修改建议: 建议不要忽略ssl认证错误
+ 
+漏洞名称: sql注入漏洞
+漏洞描述: 漏洞可能导致用户数据库中的信息泄露或者篡改
+修改建议: 建议使用安全sqlite，如sqlcipher
+ 
+漏洞名称: https空校验漏洞
+漏洞描述: 漏洞可导致中间人攻击
+修改建议: setHostnameVerifier接口请设置安全选项级别
+ 
+漏洞名称: Provider组件暴露漏洞
+漏洞描述: 没有权限限制的导出组件可以使其他app访问本程序的数据，导致数据泄露
+修改建议: 建议增加权限限制
+ 
+漏洞名称: Fragment注入漏洞
+漏洞描述: 漏洞导致通过intent输入适当的extra就可以调用其内部的任意fragment
+修改建议: 不要导出PreferenceActivity
+ 
+漏洞名称: WebView远程代码执行（CVE-2014-1939）
+漏洞描述: 在4.0至4.2的Android系统上，Webview会增加searchBoxJavaBredge_，导致远程代码执行。攻击者可以向页面植入Javascript，通过反射在客户端中执行任意恶意代码
+修改建议: 在Webview中调用removeJavascriptInterface("searchBoxJavaBredge_")
+ 
+漏洞名称: ContentResolver暴露漏洞
+漏洞描述: 通过暴露的ContentResolver可以绕过provider的权限限制
+修改建议: 对使用ContentResolver的组件不导出或者添加权限限制
+ 
+漏洞名称: https通信没有校验服务器证书
+漏洞描述: 应用没有校验服务器证书，可导致中间人攻击，泄露通信内容
+修改建议: 不要重写TrustManager类，或者实现checkServerTrusted,增加对服务器证书的校验
+ 
+漏洞名称: https通信允许所有的服务器证书
+漏洞描述: 应用没有校验服务器证书，可导致中间人攻击，泄露通信内容
+修改建议: 不要调用setHostnameVerifier设置ALLOW_ALL_HOSTNAME_VERIFY标志位
+ 
+漏洞名称: Activity安全漏洞
+漏洞描述: Activity存在崩溃或者异常，任意其它应用可导致存在此漏洞的应用崩溃或者功能调用
+修改建议: 对传给Activity的intent中的参数进行严格的检测，如无必要不要导出这个Activity
+ 
+漏洞名称: WebView远程代码执行（CVE-2012-6636）
+漏洞描述: JavascriptInterface允许攻击者向页面植入Javascript，通过反射在客户端中执行任意恶意代码。所有应用在4.2以下的应用会受影响，编译API level 小于17的应用在全部系统中都受影响
+修改建议: 若应用编译时API level小于17，需要提升SDK版本。如果希望4.2以下的手机不受影响，可以参考替代方案https://github.com/pedant/safe-java-js-webview-bridge
+ 
+漏洞名称: Service安全漏洞
+漏洞描述: Service存在崩溃或者异常，任意其它应用可导致存在此漏洞的应用崩溃或者功能调用
+修改建议: 对传给Service的intent中的参数进行严格的检测，如无必要不要导出这个Service
+ 
+漏洞名称: 使用不安全的加密模式
+漏洞描述: 使用AES或者DES加密时，使用的默认加密模式或者显式指定使用ECB模式.容易受到选择明文攻击(CPA)，造成信息泄露
+修改建议: 显式指定使用CBC模式加密
+ 
+漏洞名称: Receiver安全漏洞
+漏洞描述: BroadcastReceiver存在崩溃或者异常，任意其它应用可导致存在此漏洞的应用崩溃或者功能调用
+修改建议: 对传给BroadcastReceiver的intent中的参数进行严格的检测，如无必要不要导出这个Receiver
+ 
+漏洞名称: 加密时不能指定IV
+漏洞描述: CBC加密时，使用了常量作为IV，可被进行BEAST攻击，造成信息泄露
+修改建议: 动态生成IV的数值
+ 
+漏洞名称: 存在外部可访问的表单
+漏洞描述: 应用中存在外部可访问的表单，造成信息泄露
+修改建议: 审核这些表单的访问权限，如果非必要不要导出
+ 
+漏洞名称: 私有文件遍历漏洞
+漏洞描述: 通过存在漏洞的URI,可以遍历读取应用的私有数据文件，造成信息泄露
+修改建议: 修改存在文件遍历漏洞的URI的ContentProvider的实现,对输入进行严格的检测和过滤
+ 
+漏洞名称: Selection SQL注入漏洞
+漏洞描述: 应用存在Selection SQL注入漏洞，会导致存储在ContentProvider中的数据被泄漏和篡改
+修改建议: 修改存在注入漏洞的URI的ContentProvider的实现,对输入进行严格的检测和过滤
+ 
+漏洞名称: Projection SQL注入漏洞
+漏洞描述: 应用存在Projection SQL注入漏洞，会导致存储在ContentProvider中的数据被泄漏和篡改
+修改建议: 修改存在注入漏洞的URI的ContentProvider的实现,对输入进行严格的检测和过滤
+ 
+漏洞名称: 存在可被恶意访问的表单
+漏洞描述: 存在可以利用SQL注入方式访问的表单，造成信息泄露
+修改建议: 修复相关的SQL注入漏洞
+ 
+漏洞名称: 同源绕过漏洞
+漏洞描述: activity接收使用file://路径的协议，却没有禁用Javascript的执行，通过此漏洞可以读取应用的任意内部私有文件，造成信息泄露
+修改建议: 禁用file协议或禁止file协议加载的文件执行Javascript
+ 
+漏洞名称: 本地代码执行漏洞
+漏洞描述: Activity接受外部传入的url参数，且存在WebView远程代码。攻击者可从本地或者远程对客户端进行注入，执行任意恶意代码
+修改建议: 不要导出此Activity，或者对接受的url参数进行严格判断
+ 
+常见风险
+
+ 
+风险名称: app备份风险
+风险描述: 允许程序备份，可能导致用户信息泄露
+修改建议: 如果不需要备份则添加allowBackup=false，或者实现加密备份
+ 
+风险名称: Log信息泄露
+风险描述: 程序运行期间的log数据可能泄露
+修改建议: 建议发布版去掉log信息
+ 
+风险名称: Intent泄露用户敏感信息
+风险描述: Intent数据包含用户的敏感信息，可能导致泄露
+修改建议: 将敏感信息加密，采用权限限制Intent的范围
+ 
+风险名称: Receiver组件暴露风险
+风险描述: 广播可被外部调用导致敏感信息泄露
+修改建议: 无需暴露的组件请设置exported=false；若需要外部调用，建议添加自定义signature或signatureOrSystem级别的私有权限保护；需要暴露的组件请严格检查输入参数，避免应用出现拒绝服务。进程内动态广播注册建议使用LocalBroadcastManager；或者使用registerReceiver(BroadcastReceiver, IntentFilter, broadcastPermission, Handler)替代registerReceiver(BroadcastReceiver, IntentFilter)
+ 
+风险名称: 广播信息泄露风险
+风险描述: 广播可以被其他恶意程序进行接收，导致用户信息泄露或者终止广播
+修改建议: 建议使用显式调用方式发送Intent；进程内发送消息建议使用LocalBroadcastManager；或者使用权限限制接收范围，如使用sendBoardcast(Intent, receiverPermission)替代sendBoardcast(Intent)
+ 
+风险名称: 外部存储使用风险
+风险描述: 存储在外部空间的数据可能造成信息泄露
+修改建议: 建议敏感数据不要采用外部存储，外部存储做好权限限制和加密处理
+ 
+风险名称: app调试风险
+风险描述: 允许程序被调试
+修改建议: 将debugable的值修改为false
+ 
+风险名称: 私有配置文件读风险
+修改建议: 建议禁用全局读操作，改为MODE_PRIVATE
+ 
+风险名称: 用户自定义权限滥用风险
+风险描述: 以下权限为normal权限,可能导致敏感信息泄露
+修改建议: 建议修改为signature或者signatureOrSystem
+ 
+风险名称: 私有配置文件读写风险
+修改建议: 建议禁用全局写操作 改为MODE_PRIVATE
+ 
+风险名称: 私有配置文件写风险
+修改建议: 建议禁用全局读写操作 改为MODE_PRIVATE
+ 
+风险名称: 私有文件泄露风险
+风险描述: 存在敏感文件泄露风险
+修改建议: 建议禁用MODE_WORLD_READABLE和MODE_WORLD_READABLE选项打开文件
+ 
+风险名称: Activity组件暴露风险
+风险描述: Activity接口可被其它应用调用，用于执行特定的敏感操作或钓鱼欺骗，建议添加 android:exported=false，若需要外部调用，需自定义signature或者signatureOrSystem级别的权限
+修改建议: 无需暴露的组件请设置exported=false；若需要外部调用，建议添加自定义signature或signatureOrSystem级别的私有权限保护；需要暴露的组件请严格检查输入参数，避免应用出现拒绝服务。
+ 
+风险名称: 全局可读文件
+风险描述: 应用内存在其它任何应用都可以读取的私有文件，可能造成信息泄漏
+修改建议: 将文件属性改为只有所属用户或同组用户可以读取
+ 
+风险名称: 全局可写文件
+风险描述: 应用内存在其它任何应用都可以修改的私有文件，可能造成应用行为被修改甚至是代码注入
+修改建议: 将文件属性改为只有所属用户或同组用户可以修改
+ 
+风险名称: Uri用户敏感信息泄露
+风险描述: Uri中包含用户敏感信息，导致逆向分析者很容易获得相关信息
+修改建议: Uri路径做转换
+ 
+风险名称: 尝试使用root权限
+风险描述: 如果程序具有root权限，且没有对调用做限制的话，可能被恶意利用
+修改建议: 禁用不必要的高权限，并对关键权限加上校验限制
+ 
+风险名称: Url用户敏感信息泄露
+风险描述: Url中包含用户敏感信息，可能导致信息泄露
+修改建议: 数据加密处理
+ 
+风险名称: 外部URL可控的Webview
+风险描述: Activity可被其它应用程序掉用并加载一个外部传入的链接，可被用来进行钓鱼攻击，或者进一步进行漏洞利用
+修改建议: 减少不必要的Activity的导出
+ 
+风险名称: KeyStore风险
+风险描述: Android系统KeyStore密钥存储组件存在敏感信息泄漏漏洞
+修改建议: 建议禁用android.security.KeyStore
