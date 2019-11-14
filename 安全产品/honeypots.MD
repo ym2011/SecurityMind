@@ -23,10 +23,10 @@
 ## <a name="honeypots"></a> 蜜罐
 
 - 商业蜜网
-    - [默安科技: 幻阵](https://www.moresec.cn/magic-shield.html) - 默安科技: 幻阵
+    - [幻阵](https://www.moresec.cn/magic-shield.html) - 默安科技: 幻阵
     - [谛听](https://www.chaitin.cn/zh/dsensor) - 长亭:  谛听
-    - [幻云](https://www.jeeseen.com/product/huanyun - 锦行科技：幻云
-    - [春秋云阵蜜罐系统](https://www.jeeseen.com/product/huanyun - 永诚至信：春秋云阵蜜罐系统
+    - [幻云](https://www.jeeseen.com/product/huanyun) - 锦行科技：幻云
+    - [春秋云阵蜜罐系统](https://www.jeeseen.com/product/huanyun) - 永诚至信：春秋云阵蜜罐系统
 
 - 数据库蜜罐
     - [MongoDB-HoneyProxy](https://github.com/Plazmaz/MongoDB-HoneyProxy) - MongoDB 蜜罐代理
@@ -45,7 +45,7 @@
     - [phpmyadmin_honeypot](https://github.com/gfoss/phpmyadmin_honeypot) - - 简单有效的 phpMyAdmin 蜜罐
     - [Nodepot](https://github.com/schmalle/Nodepot)  - nodejs Web 应用蜜罐
     - [basic-auth-pot](https://github.com/bjeborn/basic-auth-pot) bap - HTTP 基本认证蜜罐
-    - [Shadow Daemon](https://shadowd.zecure.org/overview/introduction/) - 用于 PHP、Perl 和 Python 应用程序的模块化Web应用程序防火墙/高交互式蜜罐
+    - [Shadow Daemon](https://shadowd.zecure.org/overview/introduction/) - 用于 PHP、Perl 和 Python 的模块化Web应用程序防火墙/高交互式蜜罐
     - [Servletpot](https://github.com/schmalle/servletpot) - Web 应用蜜罐
     - [Google Hack Honeypot](http://ghh.sourceforge.net) - 旨在提供针对那些使用搜索引擎探测资源的攻击者的侦察
     - [smart-honeypot](https://github.com/freak3dot/smart-honeypot) - PHP 脚本编写的智能蜜罐
