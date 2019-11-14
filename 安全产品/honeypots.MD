@@ -420,7 +420,7 @@
    
 - 研究论文
     - [vEYE](https://link.springer.com/article/10.1007%2Fs10115-008-0137-3) - 自传播蠕虫行为痕迹的检测与分析
-    - [开源蜜罐测评报告(https://www.freebuf.com/articles/paper/207739.html) - 开源蜜罐测评报告
+    - [开源蜜罐测评报告](https://www.freebuf.com/articles/paper/207739.html) - 开源蜜罐测评报告
     
     
     
