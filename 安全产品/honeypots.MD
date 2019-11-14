@@ -409,7 +409,7 @@
     - [The Intelligent HoneyNet](https://github.com/jpyorre/IntelligentHoneyNet) - 试图创建蜜罐中可操作信息的智能蜜网项目
 
 ## <a name="guides"></a> 指南
-- [HFish](HFish :https://www.freebuf.com/sectool/210318.html) - 国人开发的综合蜜罐
+- [HFish](https://www.freebuf.com/sectool/210318.html) - 国人开发的综合蜜罐
 - [T-Pot: 多蜜罐平台](https://dtag-dev-sec.github.io/mediator/feature/2015/03/17/concept.html)
 - [蜜罐 (Dionaea and kippo) 设置脚本](https://github.com/andrewmichaelsmith/honeypot-setup-script/)
 
