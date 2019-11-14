@@ -22,6 +22,12 @@
 
 ## <a name="honeypots"></a> 蜜罐
 
+- 商业蜜网
+    - [默安科技: 幻阵](https://www.moresec.cn/magic-shield.html) - 默安科技: 幻阵
+    - [谛听](https://www.chaitin.cn/zh/dsensor) - 长亭:  谛听
+    - [幻云](https://www.jeeseen.com/product/huanyun - 锦行科技：幻云
+    - [春秋云阵蜜罐系统](https://www.jeeseen.com/product/huanyun - 永诚至信：春秋云阵蜜罐系统
+
 - 数据库蜜罐
     - [MongoDB-HoneyProxy](https://github.com/Plazmaz/MongoDB-HoneyProxy) - MongoDB 蜜罐代理
     - [Elastic honey](https://github.com/jordan-wright/elastichoney) - 简单的 Elasticsearch 蜜罐
@@ -34,8 +40,8 @@
 - Web 蜜罐
     - [Glastopf](https://github.com/mushorg/glastopf) - Web 应用蜜罐
     - Snare/Tanner - Glastopf 的后继者
-      - [Snare](https://github.com/mushorg/snare) - 下一代高交互 honEypot
-      - [Tanner](https://github.com/mushorg/tanner) - 评估 SNARE 事件
+    - [Snare](https://github.com/mushorg/snare) - 下一代高交互 honEypot
+    - [Tanner](https://github.com/mushorg/tanner) - 评估 SNARE 事件
     - [phpmyadmin_honeypot](https://github.com/gfoss/phpmyadmin_honeypot) - - 简单有效的 phpMyAdmin 蜜罐
     - [Nodepot](https://github.com/schmalle/Nodepot)  - nodejs Web 应用蜜罐
     - [basic-auth-pot](https://github.com/bjeborn/basic-auth-pot) bap - HTTP 基本认证蜜罐
@@ -50,10 +56,10 @@
     - [shockpot](https://github.com/threatstream/shockpot) - 检测 Shell Shock 利用尝试的 Web 应用蜜罐
     - [django-admin-honeypot](https://github.com/dmpayton/django-admin-honeypot) - 虚假的 Django 管理登录页面，记录未经授权的访问尝试
     - WordPress 蜜罐
-        - [HonnyPotter](https://github.com/MartinIngesen/HonnyPotter) - WordPress 的登录蜜罐，用于收集和分析失败的登录尝试
-        - [HoneyPress](https://github.com/dustyfresh/HoneyPress) - Docker 容器中基于 Python 的 WordPress 蜜罐
-        - [wp-smart-honeypot](https://github.com/freak3dot/wp-smart-honeypot) - 减少垃圾邮件的 WordPress 插件
-        - [wordpot](https://github.com/gbrindisi/wordpot) - WordPress 蜜罐
+    - [HonnyPotter](https://github.com/MartinIngesen/HonnyPotter) - WordPress 的登录蜜罐，用于收集和分析失败的登录尝试
+    - [HoneyPress](https://github.com/dustyfresh/HoneyPress) - Docker 容器中基于 Python 的 WordPress 蜜罐
+    - [wp-smart-honeypot](https://github.com/freak3dot/wp-smart-honeypot) - 减少垃圾邮件的 WordPress 插件
+    - [wordpot](https://github.com/gbrindisi/wordpot) - WordPress 蜜罐
     - [honeyhttpd](https://github.com/bocajspear1/honeyhttpd) - 基于 Python 的 Web 服务器蜜罐构建工具
 
 - 服务蜜罐
@@ -307,9 +313,6 @@
     - [Shiva](https://github.com/shiva-spampot/shiva) - 垃圾邮件蜜罐与智能分析工具
         - [Shiva The Spam Honeypot Tips And Tricks For Getting It Up And Running](https://www.pentestpartners.com/security-blog/shiva-the-spam-honeypot-tips-and-tricks-for-getting-it-up-and-running/)
 
-- 商业蜜网
-    - [Cymmetria Mazerunner](https://cymmetria.com/products/mazerunner/) - MazeRunner 可引导攻击者远离真实目标，并创建攻击痕迹跟踪
-
 - 服务器（蓝牙）
     - [Bluepot](https://github.com/andrewmichaelsmith/bluepot)
 
@@ -406,7 +409,7 @@
     - [The Intelligent HoneyNet](https://github.com/jpyorre/IntelligentHoneyNet) - 试图创建蜜罐中可操作信息的智能蜜网项目
 
 ## <a name="guides"></a> 指南
-
+- [HFish](HFish :https://www.freebuf.com/sectool/210318.html) - 国人开发的综合蜜罐
 - [T-Pot: 多蜜罐平台](https://dtag-dev-sec.github.io/mediator/feature/2015/03/17/concept.html)
 - [蜜罐 (Dionaea and kippo) 设置脚本](https://github.com/andrewmichaelsmith/honeypot-setup-script/)
 
@@ -414,6 +417,10 @@
     - [Dionaea and EC2 in 20 Minutes](http://andrewmichaelsmith.com/2012/03/dionaea-honeypot-on-ec2-in-20-minutes/) - 在 EC2 上设置 Dionaea 的教程
     - [honeypotpi](https://github.com/free5ty1e/honeypotpi) - 将 Raspberry Pi 变成 HoneyPot Pi 的脚本
     - [Using a Raspberry Pi honeypot to contribute data to DShield/ISC](https://isc.sans.edu/diary/22680) - 基于 Raspberry Pi 的系统可以收集比防火墙日志更丰富的日志
-
+   
 - 研究论文
     - [vEYE](https://link.springer.com/article/10.1007%2Fs10115-008-0137-3) - 自传播蠕虫行为痕迹的检测与分析
+    - [开源蜜罐测评报告(https://www.freebuf.com/articles/paper/207739.html) - 开源蜜罐测评报告
+    
+    
+    
