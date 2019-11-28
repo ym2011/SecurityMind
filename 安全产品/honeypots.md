@@ -27,6 +27,8 @@
     - [谛听](https://www.chaitin.cn/zh/dsensor) - 长亭:  谛听
     - [幻云](https://www.jeeseen.com/product/huanyun) - 锦行科技：幻云
     - [春秋云阵蜜罐系统](https://www.jeeseen.com/product/huanyun) - 永诚至信：春秋云阵蜜罐系统
+    - [明鉴迷网系统](https://www.dbappsecurity.com.cn/show-63-36-1.html) - 安恒：明鉴迷网系统
+    
 
 - 数据库蜜罐
     - [MongoDB-HoneyProxy](https://github.com/Plazmaz/MongoDB-HoneyProxy) - MongoDB 蜜罐代理
