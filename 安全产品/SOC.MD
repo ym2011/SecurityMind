@@ -27,7 +27,10 @@
 + [ 简介](https://www.asiainfo-sec.com/anquan_guanli/product/10397.html) - 实现最大化安全价值统一管理与分析，自动响应第一时间降低危害。
 + 亚信安全运营与态势感知平台（企业版）【MAXS】提供安全顶层聚合能力，实现最大化安全价值统一管理与分析。基于安全大数据中心，高效构建立体化、智能化、主动化、动态化的安全运营与态势感知体系，严格落实网络安全法与等级保护制度，实现安全空间外部与内部威胁、行为的实时监测，智能分析威胁事件及时完善通报处置，联合威胁情报狩猎追踪，自动响应第一时间降低危害。  
 
-
+### 开源软件搭建SOC
++[如何建设一个安全运营中心（SOC）](https://www.freebuf.com/articles/es/177919.html) - IT应用成熟度较高的大型企业开始进行这方面工作的试点和探索
++[开源SOC的设计与实践](https://www.freebuf.com/articles/network/173282.html) - 开源日志系统+威胁情报
++[思科OpenSOC](https://www.aqniu.com/news-views/4546.html) - 项目已迁移到Apache Metron，专注于数据分析
 
 
 
