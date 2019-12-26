@@ -32,6 +32,9 @@
 +[开源SOC的设计与实践](https://www.freebuf.com/articles/network/173282.html) - 开源日志系统+威胁情报
 +[思科OpenSOC](https://www.aqniu.com/news-views/4546.html) - 项目已迁移到Apache Metron，专注于数据分析
 
+### 企业自研开发SOC
++ 国内互联网大型企业：阿里云巴巴、腾讯、京东、百度等
++ 国内传统大型企业：华为、顺丰等
 
 
 ### [参考文章](https://www.aqniu.com/?s=SOC) 
