@@ -1,6 +1,6 @@
-## 安全运营中心 (Security Operations Center, SOC)：“人+数据+工具+流程”一体化的安全运营体系    
-### [参考文章](https://www.aqniu.com/?s=SOC)  
-### [SIEM产品](https://www.aqniu.com/learn/42117.html "12款顶级SIEM工具比较与评级")  
+## SOC( Security Operations Center) 安全运营中心
++ 目的是建立“人+数据+工具+流程”一体化的安全运营体系,以下为了解到的一些产品介绍：  
+
 ### 奇安信NGSOC：
 + [奇安信NGSOC 简介](https://www.aqniu.com/vendor/56288.html "新一代态势感知与安全运营平台")   
 + NGSOC是奇安信集团基于大数据架构自主构建的一套面向大型政企客户的新一代态势感知与安全运营平台。  
@@ -17,3 +17,7 @@
 + [IBM QRadar简介](https://www.aqniu.com/learn/40026.html "QRadar 专为大型企业设计,")   
 + [Resilient 简介](https://blog.51cto.com/9684769/1749562 "整合安全分析、取证、漏洞管理及事件响应，从而企业防护、检测和响应威胁进行协调.") 
 + IBM QRadar Security Intelligence Platform（安全情报平台）是围绕 IBM QRadar SIEM 构建。IBM QRadar Vulnerability Manager（漏洞管理器）使用虚拟机数据上下文化事件数据。IBM QRadar Network Insights（网络流量分析）提供基于 QFlow 的应用程序可见性\IBM QRadar User Behavior Analytics（用户行为分析）是处理某些内部人威胁用例的免费用户行为分析 (UBA) 模块。IBM QRadar Incident Forensics（事件取证）提供取证调查支持。IBM QRadar Advisor with Watson（认知安全分析）为已识别威胁提供自动化根源研究。QRadar可以一体化部署，也可以选择分布式部署。    
+
+
+### [参考文章](https://www.aqniu.com/?s=SOC) 
+### [SIEM产品](https://www.aqniu.com/learn/42117.html "12款顶级SIEM工具比较与评级")  
