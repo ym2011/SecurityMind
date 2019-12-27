@@ -1,12 +1,12 @@
 ## SOC( Security Operations Center) 安全运营中心
 + 目的是建立“人+数据+工具+流程”一体化的安全运营体系,以下为了解到的一些SOC产品：  
 ### IBM QRadar Security Intelligence Platform（安全情报平台） + Resilient   
-+ [IBM QRadar简介](https://www.aqniu.com/learn/40026.html)  - QRadar 专为大型企业设计，多功能集成。  
++ [IBM QRadar简介](https://www.ibm.com/cn-zh/security/security-intelligence/qradar)  - QRadar 专为大型企业设计，多功能集成。  
 + [Resilient 简介](https://blog.51cto.com/9684769/1749562) - 整合安全分析、取证、漏洞管理及事件响应，从而企业防护、检测和响应威胁进行协调。
 + IBM QRadar Security Intelligence Platform（安全情报平台）是围绕 IBM QRadar SIEM 构建。IBM QRadar Vulnerability Manager（漏洞管理器）使用虚拟机数据上下文化事件数据。IBM QRadar Network Insights（网络流量分析）提供基于 QFlow 的应用程序可见性\IBM QRadar User Behavior Analytics（用户行为分析）是处理某些内部人威胁用例的免费用户行为分析 (UBA) 模块。IBM QRadar Incident Forensics（事件取证）提供取证调查支持。IBM QRadar Advisor with Watson（认知安全分析）为已识别威胁提供自动化根源研究。QRadar可以一体化部署，也可以选择分布式部署。    
 
 ### Splunk + Phantom / Resilient  
-+ [splunk 安全平台简介](https://www.aqniu.com/industry/31842.html) - Splunk 收购Phantom,加速安全事件响应。  
++ [splunk 安全平台简介](https://www.splunk.com/zh-hans_cn/cyber-security.html) - 借助数据安全解决方案更快作出更好的信息安全决策。  
 + [Phantom 简介](https://www.freebuf.com/articles/security-management/102888.html)  - 安全运营自动化和编配,打造企业级SOAPA。  
 + Splunk和Phantom如果与服务提供商合作，帮助企业打造和设计SOC，帮助企业打造和设计SOC，搞定常规事件响应计划(IR)，用好未来几年里GDPR的部署、改进与市场对GDPR的恐慌情绪，这可能是数亿美元级别的商业机会。  
 + [Splunk vs. QRadar：竞品分析](https://www.aqniu.com/tools-tech/50655.html)   
