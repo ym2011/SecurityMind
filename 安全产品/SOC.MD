@@ -64,8 +64,7 @@
 ### 企业自研开发SOC   
 + 国内互联网大型企业：阿里云巴巴、腾讯、京东、百度等。   
 + 国内传统大型企业：华为、平安科技、顺丰等。   
-
-### [参考文章](https://www.aqniu.com/?s=SOC)    
-### [SIEM产品](https://www.aqniu.com/learn/42117.html) - 12款顶级SIEM工具比较与评级  
-
+### [参考文章](https://blog.csdn.net/qq_29277155/article/details/103734410)  - 附带产品演示图    
+### [知识搜索](https://www.aqniu.com/?s=SOC)  - 介绍、总结当前SOC产品和建设的问题、痛点、优势等    
+### [SIEM产品](https://www.aqniu.com/learn/42117.html) - 12款顶级SIEM工具比较与评级    
 
