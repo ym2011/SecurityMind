@@ -1,5 +1,5 @@
 ## SOC( Security Operations Center) 安全运营中心
-+ 目的是建立“人+数据+工具+流程”一体化的安全运营体系,以下为了解到的一些SOC产品：  
++ SOC( Security Operations Center) 安全运营中心，单独依赖于某些安全产品，在效果上总感觉有一个孤岛效应，从安全工程的角度来说，将安全工程化、系统化、流程化是一个更好的趋势，把安全过程中的有关各方如各层次的安全产品、分支机构、运营网络、客户等纳入一个紧密的统一安全管理平台中，尝试先构建一个完整的底层基础平台，再有的放矢地去完善管理、制度、策略、方针、基线的上层建筑。SOC就是这样一个有力的辅助工具，下文为在我有限的时间见过或者了解到的一些SOC平台及其介绍：  
 ### IBM QRadar Security Intelligence Platform（安全情报平台） + Resilient   
 + [ 简介](https://www.ibm.com/cn-zh/security/security-intelligence/qradar)  - QRadar 专为大型企业设计，多功能集成。  
 + [Resilient 简介](https://blog.51cto.com/9684769/1749562) - 整合安全分析、取证、漏洞管理及事件响应，从而企业防护、检测和响应威胁进行协调。
