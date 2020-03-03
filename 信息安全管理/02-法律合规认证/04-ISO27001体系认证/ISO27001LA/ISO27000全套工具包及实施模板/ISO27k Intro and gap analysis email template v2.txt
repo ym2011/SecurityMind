@@ -1,0 +1,57 @@
+Dear [NAME], 
+
+I am an information security professional working in the Information Security Department with my colleagues [NAMES].  I am managing the project to establish an Information Security Management System (ISMS) that will help us identify and mitigate unacceptable information security risks within [ORGANIZATION].  The purpose of this email is to tell you a little about the project we’re working on and to give you an insight into how you can help.
+
+
+The management of information security within [ORGANIZATION] 
+------------------------------------------------------------
+
+Information security is a complex area to manage.  Potential risks to our information assets (particularly the valuable proprietary information in our computer systems and filing cabinets) are difficult to determine and bring under control, especially in ways that don't unduly interfere with our legitimate use of the information.
+
+The most practical and cost-effective way for [ORGANIZATION] to handle its information security and governance obligations, and to be seen to be doing so, is to adopt an ISMS that complies with the international standard "ISO 27001" (see below).  An ISO 27001 ISMS comprises a framework of policies and processes to manage our physical, technical and procedural security controls systematically.  
+
+At a high level, the ISMS will help minimize the costs of security incidents and enhance our reputation.  
+
+In more detail, the ISMS will be used to:
+- Systematically assess the organization's information security risks in order to establish and prioritize its control requirements, primarily in terms of the need to protect the confidentiality, integrity and availability of information;
+- Design and implement a suite of security controls, both technical and non-technical in nature, to address any risks deemed unacceptable by management;
+- Ensure that our security controls comply with applicable laws, regulations and contracts (such as privacy laws, SOX, PCI-DSS and HIPAA);
+- Operate, manage and maintain the security controls (e.g. using security metrics to measure and improve security performance);
+- Monitor and continuously improve information security, updating the controls when the risks change (e.g. responding to novel hacker attacks or frauds, preferably in advance thereby preventing us from suffering actual incidents!).
+
+
+ISO 27001, the international standard for information security management
+-------------------------------------------------------------------------
+
+"ISO 27001" (or more formally, ISO/IEC 27001:2013, "Information Security Management Systems - Requirements") is a standard that was developed by an international committee of security experts.  ISO 27001 lays out a good practice framework for establishing, implementing, operating, monitoring, reviewing, maintaining and improving an ISMS.  The key purpose of the ISMS is to bring information security under management control, using a management system similar in structure to those used for quality (ISO 9001), environmen (ISO 14001) and others.
+
+The ISMS will provide us with a systematic approach to combating a broad range of security risks to both our own proprietary information assets and those (such as customer data and personal information about employees) over which we have a duty of care.  In addition, a formal certificate of compliance with ISO 27001 will enable us to demonstrate to customers, business partners and other stakeholders that we take our information security obligations seriously.  
+
+The certified ISMS will help us satisfy our information security and governance requirements.  In today's global information economy, applying internationally-respected good security practices is arguably even more important than simply demonstrating compliance with local laws and regulations. 
+
+To find out more about ISO 27001, please visit www.ISO27001security.com or contact me.  I'd be happy to explain it in more detail and tell you about the other members of the family of security standards commonly known as "ISO27k".
+
+
+The ISMS implementation project, and your role in it
+----------------------------------------------------
+
+Senior management has approved the investment necessary to establish an ISO 27001 ISMS.  As project manager for the ISMS implementation project, I am working with a team consisting of: 
+- [NAME]: [ROLE]
+- [NAME]: [ROLE]
+- [NAME]: [ROLE]
+
+While we will do most of the implementation work, at various times the project team will require input from key individuals like you.  We are determined to ensure that both the project and the ISMS are driven by the business, reflecting the organization's needs for information security, hence we will be seeking your assistance.  For example, we will need to determine the potential business impacts of security incidents affecting information assets upon which your department depends.  However I assure you that we will do our best to fit in with your day to day work.  
+
+One of the first steps I have to take is to tap into your knowledge in order to determine 'where we are now' in terms of information security.  This Gap Analysis involves assessing the gaps between [ORGANIZATION]'s actual information security controls and related security management practices, and those recommended by ISO 27001.  As well as examining the security policies, procedures and systems, we will be conducting informal interviews with you, [NAME], and various colleagues over the next few weeks.  We will then produce a report with a list of security improvement recommendations, prioritized according to the corresponding risks.  The report will also detail the work needed if we are to be certified against ISO 27001, pointing out priority areas to help managment with the next stage of planning. 
+
+
+What happens now? 
+-----------------
+
+Within the next [NUMBER] weeks we will distribute questionnaires to the heads of departments that have been identified as being in scope of the [ORGANIZATION] ISMS.  These questionnaires have been written to assist the planning team with the Gap Analysis and are being sent ahead of interviews to give you a feeling for what we’ll be asking.  The planning window to complete your department's Gap Analysis is from [DATE] to [DATE].  
+
+Thank you, [NAME], for taking the time to read this introductory email.  Please don't hesitate to contact me if you have any questions: I'm always happy to help and I'm looking forward to working with you.
+
+Kind regards,
+[MY NAME]
+ISMS Implementation Project Manager
