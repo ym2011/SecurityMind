@@ -1,4 +1,4 @@
-# SOC( Security Operations Center) 安全运营中心 商业版
+# SOC( Security Operations Center) 安全运营中心 or SIEM
 + SOC( Security Operations Center) 安全运营中心，单独依赖于某些安全产品，在效果上总感觉有一个孤岛效应，从安全工程的角度来说，将安全工程化、系统化、流程化是一个更好的趋势，把安全过程中的有关各方如各层次的安全产品、分支机构、运营网络、客户等纳入一个紧密的统一安全管理平台中，尝试先构建一个完整的底层基础平台，再有的放矢地去完善管理、制度、策略、方针、基线的上层建筑。SOC就是这样一个有力的辅助工具，下文为在我有限的时间见过或者了解到的一些SOC平台及其介绍：  
 ## 开源产品
 OSSIM：开源安全信息管理系统，它是一个开源安全信息和事件的管理系统，集成了一系列的能够帮助管理员更好的进行计算机安全，入侵检测和预防的工具。
@@ -8,6 +8,11 @@ w3a_SOC：Web日志审计与网络监控集合一身的平台。
 OpenSOC：致力于提供一个可扩展和可扩展的高级安全分析工具。
 Prelude：一个结合了其他各种开源工具的SIEM框架。
 MozDef：Mozilla防御平台,一套实时集成化平台，能够实现监控、反应、协作并改进相关保护功能。
+
+### 开源软件搭建SOC文章
++ [如何建设一个安全运营中心（SOC）](https://www.freebuf.com/articles/es/177919.html) - IT应用成熟度较高的大型企业开始进行试点和探索。    
++ [开源SOC的设计与实践](https://www.freebuf.com/articles/network/173282.html) - 开源日志系统+威胁情报。     
++ [思科OpenSOC](https://www.aqniu.com/news-views/4546.html) - 项目已迁移到Apache Metron，专注于数据分析。  
 
 ## 商业产品
 ### IBM QRadar Security Intelligence Platform（安全情报平台） + Resilient   
@@ -77,13 +82,6 @@ MozDef：Mozilla防御平台,一套实时集成化平台，能够实现监控、
 ### 兰云科技兰天智能安全平台   
 + [ 简介](http://www.lanysec.com/index.php?m=content&c=index&a=lists&catid=19) - 实现高级持续性恶意攻击以及内部违规行为等企业威胁有效检测
 + 兰天智能安全平台基于大数据技术基础，解决了安全分析中数据持续增长、类型复杂、来源多样等数据特性，同时使用用户及实体行为分析技术，能实现高级持续性恶意攻击以及内部违规行为等企业威胁有效检测。平台在发现威胁之后，可以和其它安全产品实现安全联动，及时阻断，为企业信息化管理部门的分析决策提供依据，保护客户核心资产。可以广泛应用于政府、金融、科研院校、能源、电信等行业的企事业内部网络安全威胁检测。
-
-
-### 开源软件搭建SOC
-+ [如何建设一个安全运营中心（SOC）](https://www.freebuf.com/articles/es/177919.html) - IT应用成熟度较高的大型企业开始进行试点和探索。    
-+ [开源SOC的设计与实践](https://www.freebuf.com/articles/network/173282.html) - 开源日志系统+威胁情报。     
-+ [思科OpenSOC](https://www.aqniu.com/news-views/4546.html) - 项目已迁移到Apache Metron，专注于数据分析。      
-
 
 ### 企业自研开发SOC   
 + 国内互联网大型企业：阿里云巴巴、腾讯、京东、百度等。   
