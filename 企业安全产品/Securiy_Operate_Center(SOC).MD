@@ -11,8 +11,7 @@ MozDef：Mozilla防御平台,一套实时集成化平台，能够实现监控、
 
 ### 开源软件搭建SOC文章
 + [如何建设一个安全运营中心（SOC）](https://www.freebuf.com/articles/es/177919.html) - IT应用成熟度较高的大型企业开始进行试点和探索。    
-+ [开源SOC的设计与实践](https://www.freebuf.com/articles/network/173282.html) - 开源日志系统+威胁情报。     
-+ [思科OpenSOC](https://www.aqniu.com/news-views/4546.html) - 项目已迁移到Apache Metron，专注于数据分析。  
++ [开源SOC的设计与实践](https://www.freebuf.com/articles/network/173282.html) - 开源日志系统+威胁情报。      
 
 ## 商业产品
 ### IBM QRadar Security Intelligence Platform（安全情报平台） + Resilient   
