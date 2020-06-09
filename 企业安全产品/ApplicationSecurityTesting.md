@@ -1,4 +1,4 @@
-# 代码安全检查
+# 1. 代码安全检查
 ## 1.1 IDE代码检测插件  
 Java编码规范方面的插件：P3C IDE
 Java漏洞检测方面的插件：Findbugs及继任者Spotbugs
@@ -17,11 +17,12 @@ OSS方面的商业产品：BlackDuck
 Node.js的web安全过滤库可以参考：egg-security
 浏览器端的过滤库有：DOMPurify
 
-## 11.4 安全编译检查：
+## 1.4 安全编译检查：
 通过Visual studio编译选项中的/GS选项检查缓冲区溢出，/guard:cf选项检查控制流安全。
 iOS APP安全编译选项有-fobjc-arc、-fstack-protector-all、-pie
 
-# 应用安全测试产品
+
+# 2. 应用安全测试产品
 安全测试阶段，自动化安全测试，自动化安全测试又包括静态应用安全测试（SAST）、动态应用安全测试（DAST）、交互应用安全测试（IAST）  
 ## 2.1 静态应用安全测试，即对应用进行白盒测试    
 ### 商业产品有：
@@ -50,7 +51,6 @@ Seay源代码审计系统
 huskyCI：针对Python、Ruby、Go语言的安全扫描的综合工具     
 flawfinder：针对C/C++的安全扫描综合工具：     
 
-
 ## 2.2 动态应用安全测试，即对应用进行黑盒测试   
 商业产品：AWVS、AppScan、绿盟漏洞扫描器、启明天镜漏洞扫描、   
 开源产品：Arachni、Owasp ZAP、Xray  
@@ -62,9 +62,10 @@ flawfinder：针对C/C++的安全扫描综合工具：
 商业产品：
 国内：默安-雳鉴IAST、新思Seeker软件、开源网安SecZone VulHunter、墨云VackBot、悬镜灵脉 AI-IAST渗透测试平台等；
 国外：Contrast Security、Veracode、CxIAST
-开源超：百度RASP、PHP taint、PHP Aspis、security_taint_propagation（JAVA）
+开源：百度RASP、PHP taint、PHP Aspis、security_taint_propagation（JAVA）
 
-# 3综合安全测试
+
+# 3. 综合安全测试
 ## 3.1 web业务安全测试：
 web安全测试：OWASP安全测试指南
 主要使用的工具：BurpSuite、Fiddler
