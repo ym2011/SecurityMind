@@ -5,30 +5,30 @@ Java漏洞检测方面的插件：Findbugs及继任者Spotbugs
 .NET漏洞检测方面的插件：Puma Scan
 支持C/C++的插件：cppcheck
 
-# 1.2 开源组件安全扫描（OSS）工具  
+## 1.2 开源组件安全扫描（OSS）工具  
 OSS方面的商业产品：BlackDuck
 开源授权协议合规检查产品：FOSSology
 组件漏洞检查方面的开源产品：Dependency-Check（可以结合maven或Jenkins使用）
 组件漏洞检测产品：synk（可以扫描node.js nmp、ruby、java依赖中的漏洞）
 依赖方面的安全检查最为丰富的是SourceClear公司的：EFDA
 
-# 1.3 安全过滤库&中间件：
+## 1.3 安全过滤库&中间件：
 常见的java安全过滤库：ESAPI
 Node.js的web安全过滤库可以参考：egg-security
 浏览器端的过滤库有：DOMPurify
 
-# 11.4 安全编译检查：
+## 11.4 安全编译检查：
 通过Visual studio编译选项中的/GS选项检查缓冲区溢出，/guard:cf选项检查控制流安全。
 iOS APP安全编译选项有-fobjc-arc、-fstack-protector-all、-pie
 
 # 应用安全测试产品
 安全测试阶段，自动化安全测试，自动化安全测试又包括静态应用安全测试（SAST）、动态应用安全测试（DAST）、交互应用安全测试（IAST）  
-# 2.1 静态应用安全测试，即对应用进行白盒测试    
-商业产品有：
+## 2.1 静态应用安全测试，即对应用进行白盒测试    
+### 商业产品有：
 Fortify：静态代码扫描工具；地址：http://www.fortify.net/
 Checkmarx：静态代码工具；地址：
 奇安信代码安全卫士：  
-开源产品：  
+### 开源产品：  
 开源PHP源代码漏洞扫描产品：  
 RIPS：用于PHP脚本漏洞的静态源代码分析器：地址：http://rips-scanner.sourceforge.net   
 progpilot 
@@ -51,20 +51,20 @@ huskyCI：针对Python、Ruby、Go语言的安全扫描的综合工具
 flawfinder：针对C/C++的安全扫描综合工具：     
 
 
-# 2.2 动态应用安全测试，即对应用进行黑盒测试   
+## 2.2 动态应用安全测试，即对应用进行黑盒测试   
 商业产品：AWVS、AppScan、绿盟漏洞扫描器、启明天镜漏洞扫描、   
 开源产品：Arachni、Owasp ZAP、Xray  
 针对REST API自动化测试的产品：Astra
 针对Web Service进行安全测试的产品：WSSAT
 针对Android的开源DAST测试产品：Qark
 
-# 2.3 交互应用安全测试，作用于应用内部的安全漏洞测试   
+## 2.3 交互应用安全测试，作用于应用内部的安全漏洞测试   
 商业产品：
 国内：默安-雳鉴IAST、新思Seeker软件、开源网安SecZone VulHunter、墨云VackBot、悬镜灵脉 AI-IAST渗透测试平台等；
 国外：Contrast Security、Veracode、CxIAST
 开源超：百度RASP、PHP taint、PHP Aspis、security_taint_propagation（JAVA）
 
-## 3综合安全测试
+# 3综合安全测试
 ## 3.1 web业务安全测试：
 web安全测试：OWASP安全测试指南
 主要使用的工具：BurpSuite、Fiddler
