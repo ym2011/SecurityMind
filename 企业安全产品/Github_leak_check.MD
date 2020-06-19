@@ -11,3 +11,5 @@
 - [GitGuardian](https://www.gitguardian.com/)：实时扫描GitHub活动的解决方案。
 
 - [code6](https://github.com/4x99/code6)：码小六 - GitHub 代码泄露监控系统。
+
+- [GitHound](https://github.com/tillson/git-hound)：GitHound：一款针对GitHub的API密钥和敏感数据搜索工具   
