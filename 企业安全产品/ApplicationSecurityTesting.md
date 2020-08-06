@@ -40,8 +40,8 @@ progpilot：针对 PHP 的白盒审计框架，基于 PHP-CFG 来实现控制流
 OpenStack Bandit：基于Python AST的静态分析器，用来查找Python代码中存在的通用安全问题的工具。地址：https://github.com/openstack/bandit/releases/   
 banruo：Java源代码漏洞，基于的fotify的自动化代码审计系统。地址:https://github.com/yingshang/banruo   
 Find Security Bugs： 用于Java Web应用程序的安全审计。地址：(https://find-sec-bugs.github.io/  
-Cobra：一款源代码安全审计工具，支持检测多种开发语言源代码中的大部分显著的安全问题和漏洞。地址：https://github.com/WhaleShark-Team/cobra  
-Infer facebook开源的一款静态代码扫描工具，针对Java, C++, Objective-C, and C 语言，网址：https://github.com/facebook/infer/releases   
+Cobra：针对PHP、Java、Python 等开发语言进行代码安全审计，还支持对 WEB 框架的识别。地址：https://github.com/WhaleShark-Team/cobra  
+Infer facebook开源的一款静态代码扫描工具，针对Java, C++, Objective-C, and C 语言，网址：https://github.com/facebook/infer/  
 Hades：静态代码脆弱性检测系统。地址：https://github.com/zsdlove/Hades  
 SonarQube  CI/CD集成平台的代码安全扫描  
 VCG:一种用于C++、C语言、VB、PHP、Java和PL/SQL的自动代码安全审查工具。地址：https://sourceforge.net/projects/visualcodegrepp/   
