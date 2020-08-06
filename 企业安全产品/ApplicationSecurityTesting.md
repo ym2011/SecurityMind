@@ -14,12 +14,13 @@ JFrog Xray，安全漏洞及依赖分析平台；链接：https://www.jfrogchina
 组件漏洞检查方面的开源产品：     
 Dependency-Check（可以结合maven、Jenkins、sonar使用）；链接：https://github.com/jeremylong/DependencyCheck   
 陌陌安全 MOSEC-X-PLUGIN 系列插件开源；链接：https://www.anquanke.com/post/id/212553   
-snyk，可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/       
+snyk  可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/       
 
 ## 1.3 安全过滤库&中间件：
-常见的java安全过滤库：ESAPI
-Node.js的web安全过滤库可以参考：egg-security
-浏览器端的过滤库有：DOMPurify
+常见的java安全过滤库：OWASP ESAPI    
+Node.js的web安全过滤库可以参考：egg-security    
+浏览器端的过滤库有：DOMPurify   
+陌陌安全JAVA、PHP SDK开源；链接：https://security.immomo.com/blog/94   
 
 ## 1.4 安全编译检查：
 通过Visual studio编译选项中的/GS选项检查缓冲区溢出，/guard:cf选项检查控制流安全。
@@ -42,17 +43,17 @@ OpenStack Bandit：基于Python AST的静态分析器，用来查找Python代码
 开源的Java源代码漏洞扫描产品：  
 banruo：基于的fotify的自动化代码审计系统。地址:https://github.com/yingshang/banruo   
 Find Security Bugs： 用于Java Web应用程序的安全审计。地址：(https://find-sec-bugs.github.io/  
-spotbugs以及相关插件fb-contrib、Raptor、
+spotbugs以及相关插件fb-contrib、Raptor   
 
 多种语言的源代码扫描产品
-Cobra：一款源代码安全审计工具，支持检测多种开发语言源代码中的大部分显著的安全问题和漏洞。地址：https://github.com/WhaleShark-Team/cobra      
+Cobra：一款源代码安全审计工具，支持检测多种开发语言源代码中的大部分显著的安全问题和漏洞。地址：https://github.com/WhaleShark-Team/cobra        
 VCG:一种用于C++、C语言、VB、PHP、Java和PL/SQL的自动代码安全审查工具。地址：https://sourceforge.net/projects/visualcodegrepp/   
-Hades：静态代码脆弱性检测系统。地址：https://github.com/zsdlove/Hades 
-Infer
-SonarQube  
-Seay源代码审计系统
-huskyCI：针对Python、Ruby、Go语言的安全扫描的综合工具     
-flawfinder：针对C/C++的安全扫描综合工具：     
+Hades：静态代码脆弱性检测系统。地址：https://github.com/zsdlove/Hades    
+SonarQube  CI/CD集成平台的代码安全扫描
+Seay源代码审计系统 国人开发的多语言的代码安全审计产品    
+huskyCI  针对Python、Ruby、Go语言的安全扫描的综合工具     
+flawfinder 针对C/C++的安全扫描综合工具  
+Infer facebook开源的一款静态代码扫描工具
 
 ## 2.2 动态应用安全测试，即对应用进行黑盒测试   
 商业产品：AWVS、AppScan、Netspark、绿盟漏洞扫描器RSAS、启明天镜漏洞扫描
