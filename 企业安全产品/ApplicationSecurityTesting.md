@@ -5,12 +5,17 @@ Java漏洞检测方面的插件：Findbugs及继任者Spotbugs
 .NET漏洞检测方面的插件：Puma Scan
 支持C/C++的插件：cppcheck
 
-## 1.2 开源组件安全扫描（OSS）工具  
-OSS方面的商业产品：BlackDuck
-开源授权协议合规检查产品：FOSSology
-组件漏洞检查方面的开源产品：Dependency-Check（可以结合maven或Jenkins使用）
-组件漏洞检测产品：synk（可以扫描node.js nmp、ruby、java依赖中的漏洞）
-依赖方面的安全检查最为丰富的是SourceClear公司的：EFDA
+## 1.2 开源组件安全扫描（OSS/SCA）工具  
+组件漏洞检查方面的商业产品：   
+OSS方面的商业产品：BlackDuck    
+FOSSology，开源授权协议合规检查产品    
+snyk，可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/     
+JFrog Xray，安全漏洞及依赖分析平台；链接：https://www.jfrogchina.com/xray/      
+组件漏洞检查方面的开源产品：     
+Dependency-Check（可以结合maven、Jenkins、sonar使用）；链接：https://github.com/jeremylong/DependencyCheck   
+陌陌安全 MOSEC-X-PLUGIN 系列插件开源；链接：https://www.anquanke.com/post/id/212553   
+snyk，可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/     
+依赖方面的安全检查最为丰富的是SourceClear公司的：EFDA    
 
 ## 1.3 安全过滤库&中间件：
 常见的java安全过滤库：ESAPI
@@ -20,7 +25,6 @@ Node.js的web安全过滤库可以参考：egg-security
 ## 1.4 安全编译检查：
 通过Visual studio编译选项中的/GS选项检查缓冲区溢出，/guard:cf选项检查控制流安全。
 iOS APP安全编译选项有-fobjc-arc、-fstack-protector-all、-pie
-
 
 # 2. 应用安全测试产品
 安全测试阶段，自动化安全测试，自动化安全测试又包括静态应用安全测试（SAST）、动态应用安全测试（DAST）、交互应用安全测试（IAST）  
