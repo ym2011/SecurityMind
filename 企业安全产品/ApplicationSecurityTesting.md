@@ -53,7 +53,7 @@ SonarQube  CI/CD集成平台的代码安全扫描
 Seay源代码审计系统 国人开发的多语言的代码安全审计产品    
 huskyCI  针对Python、Ruby、Go语言的安全扫描的综合工具     
 flawfinder 针对C/C++的安全扫描综合工具  
-Infer facebook开源的一款静态代码扫描工具
+Infer facebook开源的一款静态代码扫描工具，网址：https://github.com/facebook/infer/releases   
 
 ## 2.2 动态应用安全测试，即对应用进行黑盒测试   
 商业产品：AWVS、AppScan、Netspark、绿盟漏洞扫描器RSAS、启明天镜漏洞扫描
