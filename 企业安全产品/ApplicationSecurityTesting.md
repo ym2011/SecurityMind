@@ -28,46 +28,40 @@ iOS APP安全编译选项有-fobjc-arc、-fstack-protector-all、-pie
 
 # 2. 应用安全测试产品
 安全测试阶段，自动化安全测试，自动化安全测试又包括静态应用安全测试（SAST）、动态应用安全测试（DAST）、交互应用安全测试（IAST）  
-## 2.1 静态应用安全测试，即对应用进行白盒测试    
-### 商业产品有：
+## 2.1 静态应用安全测试（代码安全审计），即对应用进行白盒测试，也可以人工+工具结合方式进行   
+### 源代码安全审计商业产品有：
 Fortify：静态代码扫描工具；地址：http://www.fortify.net/   
 Checkmarx：静态代码工具；地址：https://www.checkmarx.com/   
 奇安信代码安全卫士， 地址：https://www.codesafe.cn/     
-### 开源产品：  
-开源PHP源代码漏洞扫描产品：  
+
+### 源代码安全审计开源产品：  
 RIPS：用于PHP脚本漏洞的静态源代码分析器：地址：http://rips-scanner.sourceforge.net   
-progpilot 
-开源Python 源代码扫描产品：  
+progpilot：针对 PHP 的白盒审计框架，基于 PHP-CFG 来实现控制流图 (CFG) 、PHP-Parser 来实现抽象语法书 ( AST 树) 的生成；网址：https://github.com/designsecurity/progpilot   
 OpenStack Bandit：基于Python AST的静态分析器，用来查找Python代码中存在的通用安全问题的工具。地址：https://github.com/openstack/bandit/releases/   
-
-开源的Java源代码漏洞扫描产品：  
-banruo：基于的fotify的自动化代码审计系统。地址:https://github.com/yingshang/banruo   
+banruo：Java源代码漏洞，基于的fotify的自动化代码审计系统。地址:https://github.com/yingshang/banruo   
 Find Security Bugs： 用于Java Web应用程序的安全审计。地址：(https://find-sec-bugs.github.io/  
-spotbugs以及相关插件fb-contrib、Raptor   
-
-多种语言的源代码扫描产品
-Cobra：一款源代码安全审计工具，支持检测多种开发语言源代码中的大部分显著的安全问题和漏洞。地址：https://github.com/WhaleShark-Team/cobra        
+Cobra：一款源代码安全审计工具，支持检测多种开发语言源代码中的大部分显著的安全问题和漏洞。地址：https://github.com/WhaleShark-Team/cobra  
+Infer facebook开源的一款静态代码扫描工具，针对Java, C++, Objective-C, and C 语言，网址：https://github.com/facebook/infer/releases   
+Hades：静态代码脆弱性检测系统。地址：https://github.com/zsdlove/Hades  
+SonarQube  CI/CD集成平台的代码安全扫描  
 VCG:一种用于C++、C语言、VB、PHP、Java和PL/SQL的自动代码安全审查工具。地址：https://sourceforge.net/projects/visualcodegrepp/   
-Hades：静态代码脆弱性检测系统。地址：https://github.com/zsdlove/Hades    
-SonarQube  CI/CD集成平台的代码安全扫描
 Seay源代码审计系统 国人开发的多语言的代码安全审计产品    
 huskyCI  针对Python、Ruby、Go语言的安全扫描的综合工具     
 flawfinder 针对C/C++的安全扫描综合工具  
-Infer facebook开源的一款静态代码扫描工具，网址：https://github.com/facebook/infer/releases   
+spotbugs以及相关插件fb-contrib、Raptor  
 
-## 2.2 动态应用安全测试，即对应用进行黑盒测试   
+## 2.2 动态应用安全测试，即对应用进行黑盒测试，即常规的web漏洞扫描     
 商业产品：AWVS、AppScan、Netspark、绿盟漏洞扫描器RSAS、启明天镜漏洞扫描
 开源产品：Xray、gaby、Owasp ZAP、Arachni   
 针对REST API自动化测试的产品：Astra   
 针对Web Service进行安全测试的产品：WSSAT   
 针对Android的开源DAST测试产品：Qark   
 
-## 2.3 交互应用安全测试，作用于应用内部的安全漏洞测试   
+## 2.3 交互应用安全测试，作用于应用内部的安全漏洞测试，即测试、开发人员也进行参与   
 商业产品：
 国内：默安-雳鉴IAST、新思Seeker软件、开源网安SecZone VulHunter、墨云VackBot、悬镜灵脉 AI-IAST渗透测试平台   
 国外：Contrast Security、Veracode、CxIAST   
 开源：百度RASP、PHP taint、PHP Aspis、security_taint_propagation（JAVA）
-
 
 # 3. 综合安全测试   
 ## 3.1 web业务安全测试：   
