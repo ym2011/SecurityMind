@@ -29,7 +29,20 @@
     - [春秋云阵蜜罐系统](https://www.jeeseen.com/product/huanyun) - 永诚至信：春秋云阵蜜罐系统
     - [明鉴迷网系统](https://www.dbappsecurity.com.cn/show-63-36-1.html) - 安恒：明鉴迷网系统
     
+## <a name="guides"></a> 指南
+- [HFish](https://www.freebuf.com/sectool/210318.html) - 国人开发的综合蜜罐
+- [T-Pot: 多蜜罐平台](https://dtag-dev-sec.github.io/mediator/feature/2015/03/17/concept.html)
+- [蜜罐 (Dionaea and kippo) 设置脚本](https://github.com/andrewmichaelsmith/honeypot-setup-script/)
 
+- 部署
+    - [Dionaea and EC2 in 20 Minutes](http://andrewmichaelsmith.com/2012/03/dionaea-honeypot-on-ec2-in-20-minutes/) - 在 EC2 上设置 Dionaea 的教程
+    - [honeypotpi](https://github.com/free5ty1e/honeypotpi) - 将 Raspberry Pi 变成 HoneyPot Pi 的脚本
+    - [Using a Raspberry Pi honeypot to contribute data to DShield/ISC](https://isc.sans.edu/diary/22680) - 基于 Raspberry Pi 的系统可以收集比防火墙日志更丰富的日志
+   
+- 研究论文
+    - [vEYE](https://link.springer.com/article/10.1007%2Fs10115-008-0137-3) - 自传播蠕虫行为痕迹的检测与分析
+    - [开源蜜罐测评报告](https://www.freebuf.com/articles/paper/207739.html) - 开源蜜罐测评报告
+    
 - 数据库蜜罐
     - [MongoDB-HoneyProxy](https://github.com/Plazmaz/MongoDB-HoneyProxy) - MongoDB 蜜罐代理
     - [Elastic honey](https://github.com/jordan-wright/elastichoney) - 简单的 Elasticsearch 蜜罐
@@ -409,20 +422,3 @@
     - [Acapulco](https://github.com/hgascon/acapulco) - 自动攻击群体图构建
     - [Sebek Dataviz](http://www.honeynet.org/gsoc/project4) - Sebek 数据可视化
     - [The Intelligent HoneyNet](https://github.com/jpyorre/IntelligentHoneyNet) - 试图创建蜜罐中可操作信息的智能蜜网项目
-
-## <a name="guides"></a> 指南
-- [HFish](https://www.freebuf.com/sectool/210318.html) - 国人开发的综合蜜罐
-- [T-Pot: 多蜜罐平台](https://dtag-dev-sec.github.io/mediator/feature/2015/03/17/concept.html)
-- [蜜罐 (Dionaea and kippo) 设置脚本](https://github.com/andrewmichaelsmith/honeypot-setup-script/)
-
-- 部署
-    - [Dionaea and EC2 in 20 Minutes](http://andrewmichaelsmith.com/2012/03/dionaea-honeypot-on-ec2-in-20-minutes/) - 在 EC2 上设置 Dionaea 的教程
-    - [honeypotpi](https://github.com/free5ty1e/honeypotpi) - 将 Raspberry Pi 变成 HoneyPot Pi 的脚本
-    - [Using a Raspberry Pi honeypot to contribute data to DShield/ISC](https://isc.sans.edu/diary/22680) - 基于 Raspberry Pi 的系统可以收集比防火墙日志更丰富的日志
-   
-- 研究论文
-    - [vEYE](https://link.springer.com/article/10.1007%2Fs10115-008-0137-3) - 自传播蠕虫行为痕迹的检测与分析
-    - [开源蜜罐测评报告](https://www.freebuf.com/articles/paper/207739.html) - 开源蜜罐测评报告
-    
-    
-    
