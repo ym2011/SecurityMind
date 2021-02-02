@@ -7,10 +7,12 @@ Java漏洞检测方面的插件：Findbugs及继任者Spotbugs
 
 ## 1.2 开源组件安全扫描（OSS/SCA）工具  
 组件漏洞检查方面的商业产品：   
-OSS方面的商业产品：BlackDuck    
-FOSSology，开源授权协议合规检查产品    
-snyk，可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/     
-JFrog Xray，安全漏洞及依赖分析平台；链接：https://www.jfrogchina.com/xray/      
+Black Duck® 软件组件分析 (SCA)：应用和容器开源风险、授权协议合规；链接：https://www.synopsys.com/zh-cn/software-integrity/security-testing/software-composition-analysis.html   
+奇安信开源卫士：开源组件资产识别、安全风险分析、授权协议合规等功能；链接：https://www.qianxin.com/product/detail/pid/13    
+棱镜七彩FossEye：开源软件的选型、安全研发、安全检测、持续集成、持续部署等开源软件安全合规解决方案，链接：https://www.7-cai.com/fosseye.html       
+snyk，可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/      
+JFrog Xray，安全漏洞及依赖分析平台；链接：https://www.jfrogchina.com/xray/     
+
 组件漏洞检查方面的开源产品：     
 Dependency-Check（可以结合maven、Jenkins、sonar使用）；链接：https://github.com/jeremylong/DependencyCheck   
 陌陌安全 MOSEC-X-PLUGIN 系列插件开源；链接：https://www.anquanke.com/post/id/212553   
