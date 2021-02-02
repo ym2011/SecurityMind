@@ -6,14 +6,14 @@ Java漏洞检测方面的插件：Findbugs及继任者Spotbugs
 支持C/C++的插件：cppcheck
 
 ## 1.2 开源组件安全扫描（OSS/SCA）工具  
-组件漏洞检查方面的商业产品：   
+### 组件漏洞检查方面的商业产品：   
 Black Duck® 软件组件分析 (SCA)：应用和容器开源风险、授权协议合规；链接：https://www.synopsys.com/zh-cn/software-integrity/security-testing/software-composition-analysis.html   
 奇安信开源卫士：开源组件资产识别、安全风险分析、授权协议合规等功能；链接：https://www.qianxin.com/product/detail/pid/13    
 棱镜七彩FossEye：开源软件的选型、安全研发、安全检测、持续集成、持续部署等开源软件安全合规解决方案，链接：https://www.7-cai.com/fosseye.html       
 snyk，可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/      
 JFrog Xray，安全漏洞及依赖分析平台；链接：https://www.jfrogchina.com/xray/     
 
-组件漏洞检查方面的开源产品：     
+### 组件漏洞检查方面的开源产品：     
 Dependency-Check（可以结合maven、Jenkins、sonar使用）；链接：https://github.com/jeremylong/DependencyCheck   
 陌陌安全 MOSEC-X-PLUGIN 系列插件开源；链接：https://www.anquanke.com/post/id/212553   
 snyk  可以扫描node.js nmp、ruby、java依赖中的漏洞，协议授权安全，多平台集成；链接：https://snyk.io/       
@@ -54,17 +54,17 @@ flawfinder 针对C/C++的安全扫描综合工具
 spotbugs以及相关插件fb-contrib、Raptor  
 
 ## 2.2 动态应用安全测试，即对应用进行黑盒测试，即常规的web漏洞扫描     
-商业产品：AWVS、AppScan、Netspark、绿盟漏洞扫描器RSAS、启明天镜漏洞扫描
-开源产品：Xray、gaby、Owasp ZAP、Arachni   
+### 商业产品：AWVS、AppScan、Netspark、绿盟漏洞扫描器RSAS、启明天镜漏洞扫描
+### 开源产品：Xray、gaby、Owasp ZAP、Arachni   
 针对REST API自动化测试的产品：Astra   
 针对Web Service进行安全测试的产品：WSSAT   
 针对Android的开源DAST测试产品：Qark   
 
 ## 2.3 交互应用安全测试，作用于应用内部的安全漏洞测试，即测试、开发人员也进行参与   
-商业产品：
+### 商业产品：
 国内：默安-雳鉴IAST、新思Seeker软件、开源网安SecZone VulHunter、墨云VackBot、悬镜灵脉 AI-IAST渗透测试平台   
 国外：Contrast Security、Veracode、CxIAST   
-开源：百度RASP、PHP taint、PHP Aspis、security_taint_propagation（JAVA）
+### 开源：百度RASP、PHP taint、PHP Aspis、security_taint_propagation（JAVA）
 
 # 3. 综合安全测试   
 ## 3.1 web业务安全测试：   
@@ -72,7 +72,7 @@ web安全测试：OWASP安全测试指南
 主要使用的工具：BurpSuite、Fiddler   
 ## 3.2 移动业务安全测试
 移动安全测试：OWASP移动安全测试指南   
-开源的产品有：MobSF   
+### 开源的产品有：MobSF   
 Android人工测试的工具有：Drozer、AppUse、Xposed、Frida   
 ios人工测试的工具有：needle、iOSSecAudit   
 
